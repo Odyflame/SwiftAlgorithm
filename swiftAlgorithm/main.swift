@@ -8,5 +8,4 @@
 
 import Foundation
 
-
-solution1874()
+solution1932() 
