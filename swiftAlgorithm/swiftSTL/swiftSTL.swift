@@ -33,6 +33,11 @@ struct Queue<T: Equatable> {
         return first
     }
     
+    public mutating func pop() -> T? {
+        let temp = element.removeFirst()
+        return temp
+    }
+    
     public var pick: T? {
         if isEmpty() {
             return nil
