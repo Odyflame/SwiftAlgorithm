@@ -17,6 +17,7 @@ public class ListNode {
         
     }
 }
+
 class Solution {
     static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         let headNode = ListNode(0)
@@ -32,7 +33,6 @@ class Solution {
             carry = sum / 10
             curr.next = ListNode(sum % 10)
             curr = curr.next!
-            
             if (p != nil) {
                 p = p!.next
             }
