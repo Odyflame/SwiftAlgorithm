@@ -11,5 +11,7 @@ import Foundation
 
 //Solution.addTwoNumbers( ListNode(2, ListNode(4, ListNode(3))), ListNode(5, ListNode(6, ListNode(4))) )
 
-solution2636()
+//solution(["U", "R", "D", "L", "U", "R", "D", "L"])
+
+reverse(1534236469)
 
