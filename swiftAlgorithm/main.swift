@@ -13,4 +13,6 @@ import Foundation
 
 //solution(["U", "R", "D", "L", "U", "R", "D", "L"])
 
-mergeTwoLists(nil, nil)
+var temp = [1,1,2]
+
+removeDuplicates(&temp)
