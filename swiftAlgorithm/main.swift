@@ -13,5 +13,4 @@ import Foundation
 
 //solution(["U", "R", "D", "L", "U", "R", "D", "L"])
 
-reverse(1534236469)
-
+mergeTwoLists(nil, nil)
