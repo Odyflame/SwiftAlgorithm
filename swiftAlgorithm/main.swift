@@ -13,6 +13,4 @@ import Foundation
 
 //solution(["U", "R", "D", "L", "U", "R", "D", "L"])
 
-var temp = [1,1,2]
-
-removeDuplicates(&temp)
+myAtoi("-91283472332")
