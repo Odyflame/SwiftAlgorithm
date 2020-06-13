@@ -12,47 +12,68 @@ var input1074: [Int] = []
 var sum1072 = 0
 var flag = false
 
-func dfs1074(x: Int, y: Int, size: Int) {
-    
-    if size == 2 {
-        
-        if !flag {
-            if x == input1074[1] && y == input1074[2] {
-                flag = true
-                return
-            }
-            else { sum1072 += 1 }
-            
-            if x + 1 == input1074[1] && y == input1074[2] {
-                flag = true
-                return
-            }
-            else { sum1072 += 1 }
-            
-            if x == input1074[1] && y + 1 == input1074[2]{
-                flag = true
-                return
-            }
-            else { sum1072 += 1 }
-            
-            if x + 1 == input1074[1] && y + 1 == input1074[2] {
-                flag = true
-                return
-            }
-            else { sum1072 += 1 }
-            
-        }
-        
-    } else {
-        dfs1074(x: x, y: y, size: size/2)
-        dfs1074(x: x, y: y + size/2, size: size/2)
-        dfs1074(x: x + size/2, y: y, size: size/2)
-        dfs1074(x: x+size/2, y: y + size/2, size: size/2)
+//시간초과가 난다.
+//func dfs1074(x: Int, y: Int, size: Int) {
+//
+//    if size == 2 {
+//
+//        if !flag {
+//            if x == input1074[1] && y == input1074[2] {
+//                flag = true
+//                return
+//            }
+//            else { sum1072 += 1 }
+//
+//            if x + 1 == input1074[1] && y == input1074[2] {
+//                flag = true
+//                return
+//            }
+//            else { sum1072 += 1 }
+//
+//            if x == input1074[1] && y + 1 == input1074[2]{
+//                flag = true
+//                return
+//            }
+//            else { sum1072 += 1 }
+//
+//            if x + 1 == input1074[1] && y + 1 == input1074[2] {
+//                flag = true
+//                return
+//            }
+//            else { sum1072 += 1 }
+//
+//        }
+//
+//    } else {
+//        dfs1074(x: x, y: y, size: size/2)
+//        dfs1074(x: x, y: y + size/2, size: size/2)
+//        dfs1074(x: x + size/2, y: y, size: size/2)
+//        dfs1074(x: x+size/2, y: y + size/2, size: size/2)
+//    }
+//}
+
+
+func dfs1074(x : Int, y: Int, size: Int) {
+    if x == input1074[1] && y == input1074[2] {
+        //sum1072 = size
+        return
     }
+    
+    if input1074[1] > x && input1074[2] > y {
+        dfs1074(x: x, y: y, size: size)
+    } else if x >= input1074[1] + size/2 && input1074[2] > y {
+        //dfs1074(x: x, y: y + size/2, size: size + size/2 * )
+    } else if x >= input1074[1] + size/2 && input1074[2] > y {
+        dfs1074(x: x, y: y + size/2, size: size/2)
+    } else  {
+        dfs1074(x: x, y: y + size/2, size: size/2)
+    }
+    
 }
 
 func solution1074() {
     let input = readLine()!.split(separator: " ").map { Int($0)! }
+
     input1074 = input
     var size1074 = 2
     for i in 2...input[0] {
