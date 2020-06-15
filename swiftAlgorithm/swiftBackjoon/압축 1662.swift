@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+
+func solution1662()  {
+    
+    var answer = 0
+    var read = readLine()
+    
+    if read == nil {
+        print(answer)
+    }
+    
+    var arr = [Int]()
+    
+    var sArray = Array(read!)
+    
+    print(answer)
+}
