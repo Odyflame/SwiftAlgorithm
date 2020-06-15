@@ -13,6 +13,14 @@ import Foundation
 
 //solution(["U", "R", "D", "L", "U", "R", "D", "L"])
 
+/**
+ 아스키코드
+ 0 ->  48
+ A -> 65
+ a -> 97
+ " " ->32
+ */
+
 var root = TreeNode()
 
-isSymmetric(root)
+solution1992()
