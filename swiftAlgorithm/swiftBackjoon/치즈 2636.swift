@@ -8,8 +8,8 @@
 
 import Foundation
 
-var dx = [0,0,1,-1]
-var dy = [1,-1,0,0]
+let dx = [0,0,1,-1]
+let dy = [1,-1,0,0]
 
 func solution2636() {
     let MN = readLine()!.split(separator: " ").map { Int($0)! }

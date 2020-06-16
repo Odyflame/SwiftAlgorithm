@@ -23,4 +23,5 @@ import Foundation
 
 var root = TreeNode()
 
-solution1662()
+//solution1662()
+solution17144()
