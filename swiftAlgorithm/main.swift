@@ -24,4 +24,4 @@ import Foundation
 var root = TreeNode()
 
 //solution1662()
-solution("try modal hello")
+solution("ABC", 1)
