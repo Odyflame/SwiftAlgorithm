@@ -101,6 +101,7 @@ func solution(_ s:String, _ n:Int) -> String {
     var array = ["1", "2", "3"]
     array.joined()
     
+    
     return s.utf8.map {
         var code = Int($0)
         switch code {
