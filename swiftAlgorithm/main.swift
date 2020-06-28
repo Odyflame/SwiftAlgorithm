@@ -25,5 +25,4 @@ var root = TreeNode()
 
 //solution1662()
 //solution([["yellow_hat", "headgear"], ["blue_sunglasses","eyewear"], ["green_turban", "headgear"], ["green_pant", "pants"] , ["jake", "tshrit"]])
-solution1(10)
-solution1(4, 10)
+solution2(3,12)

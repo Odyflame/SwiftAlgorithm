@@ -12,11 +12,11 @@ func solution1(_ a:Int, _ b:Int) -> Int64 {
     
     var answer: Int64 = 0
     var ansd = "sdfsdf".reversed()
-    if a==b {
+    if a == b {
         return Int64(a)
     }
     
-    if a > b {
+    if a < b {
         for i in a ... b {
             answer += Int64(i)
         }
