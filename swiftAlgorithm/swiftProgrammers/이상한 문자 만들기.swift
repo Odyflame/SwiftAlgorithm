@@ -8,26 +8,26 @@
 
 import Foundation
 
-func solution(_ s:String) -> String {
-    
-    var srr = s.components(separatedBy: " ")
-    var answer:String = ""
-    
-    for word in srr {
-        
-        var sArray = Array(word)
-        for i in 0..<sArray.count {
-            if i % 2 == 0 {
-                answer += String(sArray[i]).uppercased()
-            } else {
-                answer += String(sArray[i]).lowercased()
-            }
-        }
-        
-        answer += " "
-    }
-    
-    answer.removeLast()
-    
-    return answer
-}
+//func solution(_ s:String) -> String {
+//    
+//    var srr = s.components(separatedBy: " ")
+//    var answer:String = ""
+//    
+//    for word in srr {
+//        
+//        var sArray = Array(word)
+//        for i in 0..<sArray.count {
+//            if i % 2 == 0 {
+//                answer += String(sArray[i]).uppercased()
+//            } else {
+//                answer += String(sArray[i]).lowercased()
+//            }
+//        }
+//        
+//        answer += " "
+//    }
+//    
+//    answer.removeLast()
+//    
+//    return answer
+//}

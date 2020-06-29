@@ -8,16 +8,16 @@
 
 import Foundation
 
-func solution(_ n:Int64) -> Int64 {
-    
-    func desc(a: Character, b: Character) -> Bool {
-        return a > b
-    }
-    
-    var srr = String(n)
-    
-    var ans = String(srr.sorted(by: desc))
-    
-    return Int64(ans)!
-}
-
+//func solution(_ n:Int64) -> Int64 {
+//    
+//    func desc(a: Character, b: Character) -> Bool {
+//        return a > b
+//    }
+//    
+//    var srr = String(n)
+//    
+//    var ans = String(srr.sorted(by: desc))
+//    
+//    return Int64(ans)!
+//}
+//

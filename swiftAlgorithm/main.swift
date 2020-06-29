@@ -26,4 +26,4 @@ var root = TreeNode()
 //solution1662()
 //solution([["yellow_hat", "headgear"], ["blue_sunglasses","eyewear"], ["green_turban", "headgear"], ["green_pant", "pants"] , ["jake", "tshrit"]])
 
-solution5(5, [2, 1, 2, 6, 2, 4, 3, 3])
+solution("1S2D*3T")

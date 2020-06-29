@@ -8,22 +8,22 @@
 
 import Foundation
 
-func solution2(_ arrangement:String) -> Int {
-    
-    var answer = 0
-    var stackAnswer = ""
-    var check = ""
-    
-    for i in arrangement {
-        if i == "(" {
-            stackAnswer += "("
-            check = "("
-        } else {
-            stackAnswer.removeLast()
-            answer += check == "(" ? stackAnswer.count : 1
-            check = ")"
-        }
-    }
-    
-    return answer
-}
+//func solution2(_ arrangement:String) -> Int {
+//
+//    var answer = 0
+//    var stackAnswer = ""
+//    var check = ""
+//
+//    for i in arrangement {
+//        if i == "(" {
+//            stackAnswer += "("
+//            check = "("
+//        } else {
+//            stackAnswer.removeLast()
+//            answer += check == "(" ? stackAnswer.count : 1
+//            check = ")"
+//        }
+//    }
+//
+//    return answer
+//}

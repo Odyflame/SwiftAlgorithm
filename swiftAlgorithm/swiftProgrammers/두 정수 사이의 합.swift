@@ -8,23 +8,23 @@
 
 import Foundation
 
-func solution1(_ a:Int, _ b:Int) -> Int64 {
-    
-    var answer: Int64 = 0
-    var ansd = "sdfsdf".reversed()
-    if a == b {
-        return Int64(a)
-    }
-    
-    if a < b {
-        for i in a ... b {
-            answer += Int64(i)
-        }
-    } else {
-        for i in b ... a {
-            answer += Int64(i)
-        }
-    }
-    
-    return answer
-}
+//func solution1(_ a:Int, _ b:Int) -> Int64 {
+//    
+//    var answer: Int64 = 0
+//    var ansd = "sdfsdf".reversed()
+//    if a == b {
+//        return Int64(a)
+//    }
+//    
+//    if a < b {
+//        for i in a ... b {
+//            answer += Int64(i)
+//        }
+//    } else {
+//        for i in b ... a {
+//            answer += Int64(i)
+//        }
+//    }
+//    
+//    return answer
+//}

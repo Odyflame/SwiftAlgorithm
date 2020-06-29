@@ -8,22 +8,22 @@
 
 import Foundation
 
-func solution3(_ s:String) -> String {
-    
-    func desc(a: Character, b: Character)-> Bool {
-        
-        if a.isUppercase && b.isUppercase {
-            return a > b
-        } else if a.isUppercase {
-            return false
-        } else if b.isUppercase {
-            return true
-        } else {
-            return a > b
-        }
-    }
-    
-    var ans = s.sorted(by: desc)
-    
-    return String(ans)
-}
+//func solution3(_ s:String) -> String {
+//    
+//    func desc(a: Character, b: Character)-> Bool {
+//        
+//        if a.isUppercase && b.isUppercase {
+//            return a > b
+//        } else if a.isUppercase {
+//            return false
+//        } else if b.isUppercase {
+//            return true
+//        } else {
+//            return a > b
+//        }
+//    }
+//    
+//    var ans = s.sorted(by: desc)
+//    
+//    return String(ans)
+//}

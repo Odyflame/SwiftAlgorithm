@@ -8,14 +8,14 @@
 
 import Foundation
 
-func solution(_ n:Int64) -> [Int] {
-    var answer = [Int]()
-    
-    var temp = String(n)
-    
-    while temp.count > 0 {
-        answer.append(Int(String(temp.removeLast()))!)
-    }
-    
-    return answer
-}
+//func solution(_ n:Int64) -> [Int] {
+//    var answer = [Int]()
+//    
+//    var temp = String(n)
+//    
+//    while temp.count > 0 {
+//        answer.append(Int(String(temp.removeLast()))!)
+//    }
+//    
+//    return answer
+//}

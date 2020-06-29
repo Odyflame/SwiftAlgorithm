@@ -74,44 +74,44 @@ import Foundation
 //}
 
 
-func solution(_ s:String, _ n:Int) -> String {
-    
-    
-    let arr = s.utf8.map {
-        var code = Int($0)
-        switch code {
-            case 65 ... 90 :
-            code = (code + n - 65) % 26 + 65
-        case 97 ... 122 :
-            code = (code - 65 + n) % 26 + 97
-        default :
-            break
-        }
-        
-        return String(UnicodeScalar(code)!)
-    }.joined()
-    
-    // joined 시퀀스 순서의 요소를 연결하여 반환합니다.
-    
-    let Sarray = Array(s)
-
-    var tempo = [[1,2,3],[1,2,3],[1,2,3]]
-    tempo.joined()
-    
-    var array = ["1", "2", "3"]
-    array.joined()
-    
-    
-    return s.utf8.map {
-        var code = Int($0)
-        switch code {
-            case 65...90:
-                code = (code + n - 65) % 26 + 65
-            case 97...122:
-                code = (code + n - 97) % 26 + 97
-            default:
-                break
-        }
-        return String(UnicodeScalar(code)!)
-    }.joined()
-}
+//func solution(_ s:String, _ n:Int) -> String {
+//    
+//    
+//    let arr = s.utf8.map {
+//        var code = Int($0)
+//        switch code {
+//            case 65 ... 90 :
+//            code = (code + n - 65) % 26 + 65
+//        case 97 ... 122 :
+//            code = (code - 65 + n) % 26 + 97
+//        default :
+//            break
+//        }
+//        
+//        return String(UnicodeScalar(code)!)
+//    }.joined()
+//    
+//    // joined 시퀀스 순서의 요소를 연결하여 반환합니다.
+//    
+//    let Sarray = Array(s)
+//
+//    var tempo = [[1,2,3],[1,2,3],[1,2,3]]
+//    tempo.joined()
+//    
+//    var array = ["1", "2", "3"]
+//    array.joined()
+//    
+//    
+//    return s.utf8.map {
+//        var code = Int($0)
+//        switch code {
+//            case 65...90:
+//                code = (code + n - 65) % 26 + 65
+//            case 97...122:
+//                code = (code + n - 97) % 26 + 97
+//            default:
+//                break
+//        }
+//        return String(UnicodeScalar(code)!)
+//    }.joined()
+//}
