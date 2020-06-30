@@ -9,9 +9,9 @@
 import Foundation
 
 //func solution(_ brown:Int, _ yellow:Int) -> [Int] {
-//    
+//
 //    var answer = [Int]()
-//    
+//
 //    for i in 1 ..< (yellow + brown) {
 //        if (yellow + brown) % i == 0 {
 //            if (i - 2) * ((yellow + brown) / i - 2) == yellow {
@@ -21,6 +21,7 @@ import Foundation
 //            }
 //        }
 //    }
+//    
 //    
 //    return answer
 //}
