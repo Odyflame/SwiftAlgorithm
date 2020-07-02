@@ -8,11 +8,11 @@
 
 import Foundation
 
-func solution(_ s:String) -> String {
-    var s = s
-    
-    let answer = s.components(separatedBy: [" "]).map { Int($0)! }.sorted(by: >)
-    let user = "\(answer.first) \(answer.last)"
-    
-    return user
-}
+//func solution(_ s:String) -> String {
+//    var s = s
+//
+//    let answer = s.components(separatedBy: [" "]).map { Int($0)! }.sorted(by: <)
+//    let user = "\(answer.first!) \(answer.last!)"
+//    
+//    return user
+//}
