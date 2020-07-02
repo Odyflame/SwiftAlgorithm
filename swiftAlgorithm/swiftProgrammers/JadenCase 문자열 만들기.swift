@@ -32,35 +32,35 @@ import Foundation
 //    return ans
 //}
 
-func solution(_ s:String) -> String {
-    var result : String = ""
-    var first = true
-    
-    for c in s {
-        var d = String(c)
-        switch d {
-        case "A"..."Z":
-            if first {
-                result += d
-                first = false
-            } else {
-                result += d.lowercased()
-            }
-        case "a"..."z":
-            if first {
-                result += d.uppercased()
-                first = false
-            } else {
-                result += d
-            }
-        case " ":
-            result += " "
-            first = true
-        default:
-            first = false
-            result += d
-        }
-    }
-    
-    return result
-}
+//func solution(_ s:String) -> String {
+//    var result : String = ""
+//    var first = true
+//
+//    for c in s {
+//        var d = String(c)
+//        switch d {
+//        case "A"..."Z":
+//            if first {
+//                result += d
+//                first = false
+//            } else {
+//                result += d.lowercased()
+//            }
+//        case "a"..."z":
+//            if first {
+//                result += d.uppercased()
+//                first = false
+//            } else {
+//                result += d
+//            }
+//        case " ":
+//            result += " "
+//            first = true
+//        default:
+//            first = false
+//            result += d
+//        }
+//    }
+//
+//    return result
+//}
