@@ -18,7 +18,9 @@ import Foundation
 //        return clothes.filter({ $0.last == category }).count + 1
 //    })
 //
-//    return counts.reduce(2,  { $0 * $1 }) - 1
+//    let user = counts.reduce(1, { $0 * $1 }) - 1
+//
+//    return user
 //}
 
 //이동건
@@ -45,25 +47,25 @@ import Foundation
 //
 //}
 
-func solution1(_ n:Int) -> Int {
-    
-    var answer = 0
-    
-    var check = [Bool](repeating: false, count: 1000001)
-    
-    for i in 2 ... 1000000 {
-        if !check[i] {
-            for j in stride(from: i * 2, to: 1000000, by: i) {
-                check[j] = true
-            }
-        }
-    }
-    
-    for i in 2 ... n {
-        if !check[i] {
-            answer += 1
-        }
-    }
-    
-    return answer
-}
+//func solution1(_ n:Int) -> Int {
+//
+//    var answer = 0
+//
+//    var check = [Bool](repeating: false, count: 1000001)
+//
+//    for i in 2 ... 1000000 {
+//        if !check[i] {
+//            for j in stride(from: i * 2, to: 1000000, by: i) {
+//                check[j] = true
+//            }
+//        }
+//    }
+//
+//    for i in 2 ... n {
+//        if !check[i] {
+//            answer += 1
+//        }
+//    }
+//
+//    return answer
+//}

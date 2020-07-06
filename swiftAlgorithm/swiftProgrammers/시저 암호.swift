@@ -8,34 +8,30 @@
 
 import Foundation
 
-//func solution(_ s:String, _ n:Int) -> String {
-//
-//    var answer = ""
-//
-//    var alphabet = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-//    var ALPHABET = Array("abcdefghijklmnopqrstuvwxyz")
-//
-//    for (index, value) in s.enumerated() {
-//
-//        if value.isLowercase {
-//            if let index = ALPHABET.index(where: { $0 == value}) {
-//                answer += String(ALPHABET[(index + n) % 26 ])
-//            } else {
-//
-//            }
-//        }  else if value.isUppercase {
-//            if let index = alphabet.index(where : { $0 == value}) {
-//                answer += String(alphabet[(index + n) % 26 ])
-//            } else {
-//
-//            }
-//        } else {
-//            answer += " "
-//        }
-//    }
-//
-//    return answer
-//}
+func solution(_ s:String, _ n:Int) -> String {
+
+    var answer = ""
+
+    var alphabet = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    var ALPHABET = Array("abcdefghijklmnopqrstuvwxyz")
+
+    for (index, value) in s.enumerated() {
+
+        if value.isLowercase {
+            if let index = ALPHABET.index(where: { $0 == value}) {
+                answer += String(ALPHABET[(index + n) % 26 ])
+            }
+        }  else if value.isUppercase {
+            if let index = alphabet.index(where : { $0 == value}) {
+                answer += String(alphabet[(index + n) % 26 ])
+            }
+        } else {
+            answer += " "
+        }
+    }
+
+    return answer
+}
 
 
 //정진은

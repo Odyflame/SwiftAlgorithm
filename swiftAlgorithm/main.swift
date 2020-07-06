@@ -8,23 +8,28 @@
 
 import Foundation
 
+//func solution(_ s:String) -> String {
+//
+//    func desc(a: Character, b: Character)-> Bool {
+//
+//        if a.isUppercase && b.isUppercase {
+//            return a > b
+//        } else if a.isUppercase {
+//            return false
+//        } else if b.isUppercase {
+//            return true
+//        } else {
+//            return a > b
+//        }
+//    }
+//
+//    var ans = s.sorted(by: desc)
+//
+//    return String(ans)
+//}
+//
+//solution("sdfaefsvdvAAA")
+//solution([["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]])
+//solution([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]])
 
-//Solution.addTwoNumbers( ListNode(2, ListNode(4, ListNode(3))), ListNode(5, ListNode(6, ListNode(4))) )
-
-//solution(["U", "R", "D", "L", "U", "R", "D", "L"])
-
-/**
- 아스키코드
- 0 ->  48
- A -> 65
- a -> 97
- " " ->32
- */
-
-var root = TreeNode()
-
-//solution1662()
-//solution([["yellow_hat", "headgear"], ["blue_sunglasses","eyewear"], ["green_turban", "headgear"], ["green_pant", "pants"] , ["jake", "tshrit"]])
-
-//solution("TOBEORNOTTOBEORTOBEORNOT")
-solution(    [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], "right")
+solution(["너굴", "너울", "여울", "서울"])

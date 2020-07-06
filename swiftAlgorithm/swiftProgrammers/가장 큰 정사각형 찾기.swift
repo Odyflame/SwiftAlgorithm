@@ -16,7 +16,7 @@ import Foundation
 //    var answer = 0
 //    
 //    if board.count < 2 || board[0].count < 2{
-//        for i  in 0..<board.count {
+//        for i in 0..<board.count {
 //            for j in 0..<board[0].count where board[i][j] == 1 {
 //                answer = 1
 //                break
