@@ -9,7 +9,7 @@
 //import Foundation
 //
 //func solution(_ n:Int) -> Int {
-//    
+//
 //    var dp:[Int] = [Int](repeating: 0, count: 2020)
 //    
 //    //dfs는 시간초과가 생긴다.
@@ -25,7 +25,7 @@
 //    //
 //    //        return answer
 //    //    }
-//    
+//
 //    dp[1] = 1
 //    dp[2] = 2
 //    if n >= 3 {
