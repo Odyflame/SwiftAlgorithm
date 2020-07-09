@@ -74,52 +74,52 @@
 
 import Foundation
 
-func solution(_ gems:[String]) -> [Int] {
-    var answer = [Int]()
-    var mySet = Set(gems)
-    
-    if gems.count <= 1 {
-        return [1, 1]
-    }
-    
-    var myStartIndex = 0
-    var myEndIndex = 0
-    var myDic = [String: Int]()
-    var minDist = 9999999
-    
-    while myStartIndex <= myEndIndex {
-        
-        if myDic.count >= mySet.count {
-            
-            myDic[gems[myStartIndex]]! -= 1
-            if myDic[gems[myStartIndex]] == 0 {
-                //myDic[gems[myStartIndex]] = nil
-                myDic.removeValue(forKey: gems[myStartIndex])
-            }
-            myStartIndex += 1
-        } else if myEndIndex == gems.count {
-            break
-        } else {
-//            if myDic[gems[myEndIndex]] == nil {
-//                myDic[gems[myEndIndex]] = 1
-//            } else {
-//                myDic[gems[myEndIndex]]! += 1
+//func solution(_ gems:[String]) -> [Int] {
+//    var answer = [Int]()
+//    var mySet = Set(gems)
+//    
+//    if gems.count <= 1 {
+//        return [1, 1]
+//    }
+//    
+//    var myStartIndex = 0
+//    var myEndIndex = 0
+//    var myDic = [String: Int]()
+//    var minDist = 9999999
+//    
+//    while myStartIndex <= myEndIndex {
+//        
+//        if myDic.count >= mySet.count {
+//            
+//            myDic[gems[myStartIndex]]! -= 1
+//            if myDic[gems[myStartIndex]] == 0 {
+//                //myDic[gems[myStartIndex]] = nil
+//                myDic.removeValue(forKey: gems[myStartIndex])
 //            }
-            if let gem = myDic[gems[myEndIndex]] {
-                myDic[gems[myEndIndex]] = gem + 1
-            } else {
-                myDic[gems[myEndIndex]] = 1
-            }
-            myEndIndex += 1
-        }
-        
-        if myDic.count == mySet.count {
-            if myEndIndex - myStartIndex < minDist {
-                minDist = myEndIndex - myStartIndex
-                answer = [ myStartIndex + 1, myEndIndex]
-            }
-        }
-    }
-    
-    return answer
-}
+//            myStartIndex += 1
+//        } else if myEndIndex == gems.count {
+//            break
+//        } else {
+////            if myDic[gems[myEndIndex]] == nil {
+////                myDic[gems[myEndIndex]] = 1
+////            } else {
+////                myDic[gems[myEndIndex]]! += 1
+////            }
+//            if let gem = myDic[gems[myEndIndex]] {
+//                myDic[gems[myEndIndex]] = gem + 1
+//            } else {
+//                myDic[gems[myEndIndex]] = 1
+//            }
+//            myEndIndex += 1
+//        }
+//        
+//        if myDic.count == mySet.count {
+//            if myEndIndex - myStartIndex < minDist {
+//                minDist = myEndIndex - myStartIndex
+//                answer = [ myStartIndex + 1, myEndIndex]
+//            }
+//        }
+//    }
+//    
+//    return answer
+//}
