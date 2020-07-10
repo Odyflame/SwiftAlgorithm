@@ -9,7 +9,7 @@
 //import Foundation
 //
 //func solution(_ board:[[Int]]) -> Int {
-//    
+//
 //    var answer = 0
 //    struct point {
 //        var x: Int
@@ -18,24 +18,24 @@
 //    }
 //    var dx = [-1, 1, 0, 0]
 //    var dy = [0, 0, -1, 1]
-//    
+//
 //    var dp = Array(repeating: Array(repeating: 9999999, count: 26), count: 26)
-//    
+//
 //    var qu = [(point, Int)]() // point, sum
 //    qu.append( (point(x: 0,y: 0, pos: -1), 0 ) )
-//    
+//
 //    dp[0][0] = 0
-//    
+//
 //    func checkRange (_ x: Int, _ y: Int) -> Bool {
 //        if x >= 0 && x < board.count && y >= 0 && y < board.count && board[x][y] == 0 {
 //            return true
 //        }
 //        return false
 //    }
-//    
+//
 //    while !qu.isEmpty {
 //        var temp = qu.removeFirst()
-//        
+//
 //        if temp.0.x == 0 && temp.0.y == 6{
 //            print(1)
 //        }
@@ -54,8 +54,8 @@
 //                }
 //            }
 //        }
-//        
+//
 //    }
-//    
+//
 //    return dp[board.count - 1][board.count - 1]
 //}
