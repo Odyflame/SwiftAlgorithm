@@ -17,6 +17,10 @@ import Foundation
 //    let counts = categories.map({ category in
 //        return clothes.filter({ $0.last == category }).count + 1
 //    })
+//    
+//    let counts2 = categories.map { category in
+//        return clothes.filter { $0.last == category }.count + 1
+//    }
 //
 //    let user = counts.reduce(1, { $0 * $1 }) - 1
 //
