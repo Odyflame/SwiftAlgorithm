@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+func myPow(_ x: Double, _ n: Int) -> Double {
+    var answer:Double = 0.0
+    
+    answer = pow(x, Double(n))
+    
+    return answer
+}
