@@ -8,5 +8,6 @@
 
 import Foundation
 
-
-print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+print(uniquePathsWithObstacles([
+[0,1,0,0,0],[1,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]
+]))

@@ -29,6 +29,21 @@
 		184F3A03249234F700742A22 /* String to Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F3A02249234F700742A22 /* String to Integer.swift */; };
 		18688C2224B02D6600E9B1E4 /* Q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18688C2124B02D6600E9B1E4 /* Q1.swift */; };
 		18688C2424B02D6D00E9B1E4 /* Q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18688C2324B02D6D00E9B1E4 /* Q2.swift */; };
+		186D723D2507439400CF3031 /* 큰 수 A+B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D723C2507439400CF3031 /* 큰 수 A+B.swift */; };
+		186D723F25074AF400CF3031 /* 66. Plus One.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D723E25074AF400CF3031 /* 66. Plus One.swift */; };
+		186D724125079C7000CF3031 /* Sum of Root To Leaf Binary Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D724025079C7000CF3031 /* Sum of Root To Leaf Binary Numbers.swift */; };
+		186D72432507B79300CF3031 /* 67. Add Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D72422507B79300CF3031 /* 67. Add Binary.swift */; };
+		186D72452507BC6400CF3031 /* 63. Unique Paths II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D72442507BC6400CF3031 /* 63. Unique Paths II.swift */; };
+		186D724725087B3800CF3031 /* 64. Minimum Path Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D724625087B3800CF3031 /* 64. Minimum Path Sum.swift */; };
+		186D724925088A3E00CF3031 /* 36. Valid Sudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D724825088A3E00CF3031 /* 36. Valid Sudoku.swift */; };
+		186DBEE324F21A0800F26F53 /* 55. Jump Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DBEE224F21A0800F26F53 /* 55. Jump Game.swift */; };
+		186DBEE524F2281C00F26F53 /* 56. Merge Intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DBEE424F2281C00F26F53 /* 56. Merge Intervals.swift */; };
+		186DBEE724F22D1400F26F53 /* 62. Unique Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DBEE624F22D1400F26F53 /* 62. Unique Paths.swift */; };
+		186F4C842505B7E1005356D5 /* 40. Combination Sum II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F4C832505B7E1005356D5 /* 40. Combination Sum II.swift */; };
+		186F4C8625062A4D005356D5 /* 43. Multiply Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F4C8525062A4D005356D5 /* 43. Multiply Strings.swift */; };
+		186F4C8825062C0F005356D5 /* 50. Pow(x, n).swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F4C8725062C0F005356D5 /* 50. Pow(x, n).swift */; };
+		186F4C8A25062C95005356D5 /* 58. Length of Last Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F4C8925062C95005356D5 /* 58. Length of Last Word.swift */; };
+		186F4C8C25062E0E005356D5 /* 54. Spiral Matrix .swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F4C8B25062E0E005356D5 /* 54. Spiral Matrix .swift */; };
 		186F638D24AED67700569068 /* 최솟값 만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F638C24AED67700569068 /* 최솟값 만들기.swift */; };
 		186F638F24AEE22200569068 /* 짝지어 계산하기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F638E24AEE22200569068 /* 짝지어 계산하기.swift */; };
 		186F639424AF020500569068 /* 후보키.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F639324AF020500569068 /* 후보키.swift */; };
@@ -172,6 +187,21 @@
 		184F3A02249234F700742A22 /* String to Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String to Integer.swift"; sourceTree = "<group>"; };
 		18688C2124B02D6600E9B1E4 /* Q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1.swift; sourceTree = "<group>"; };
 		18688C2324B02D6D00E9B1E4 /* Q2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2.swift; sourceTree = "<group>"; };
+		186D723C2507439400CF3031 /* 큰 수 A+B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "큰 수 A+B.swift"; sourceTree = "<group>"; };
+		186D723E25074AF400CF3031 /* 66. Plus One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "66. Plus One.swift"; sourceTree = "<group>"; };
+		186D724025079C7000CF3031 /* Sum of Root To Leaf Binary Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sum of Root To Leaf Binary Numbers.swift"; sourceTree = "<group>"; };
+		186D72422507B79300CF3031 /* 67. Add Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "67. Add Binary.swift"; sourceTree = "<group>"; };
+		186D72442507BC6400CF3031 /* 63. Unique Paths II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "63. Unique Paths II.swift"; sourceTree = "<group>"; };
+		186D724625087B3800CF3031 /* 64. Minimum Path Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "64. Minimum Path Sum.swift"; sourceTree = "<group>"; };
+		186D724825088A3E00CF3031 /* 36. Valid Sudoku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "36. Valid Sudoku.swift"; sourceTree = "<group>"; };
+		186DBEE224F21A0800F26F53 /* 55. Jump Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "55. Jump Game.swift"; sourceTree = "<group>"; };
+		186DBEE424F2281C00F26F53 /* 56. Merge Intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "56. Merge Intervals.swift"; sourceTree = "<group>"; };
+		186DBEE624F22D1400F26F53 /* 62. Unique Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "62. Unique Paths.swift"; sourceTree = "<group>"; };
+		186F4C832505B7E1005356D5 /* 40. Combination Sum II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "40. Combination Sum II.swift"; sourceTree = "<group>"; };
+		186F4C8525062A4D005356D5 /* 43. Multiply Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "43. Multiply Strings.swift"; sourceTree = "<group>"; };
+		186F4C8725062C0F005356D5 /* 50. Pow(x, n).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "50. Pow(x, n).swift"; sourceTree = "<group>"; };
+		186F4C8925062C95005356D5 /* 58. Length of Last Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "58. Length of Last Word.swift"; sourceTree = "<group>"; };
+		186F4C8B25062E0E005356D5 /* 54. Spiral Matrix .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "54. Spiral Matrix .swift"; sourceTree = "<group>"; };
 		186F638C24AED67700569068 /* 최솟값 만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "최솟값 만들기.swift"; path = "../../../최솟값 만들기.swift"; sourceTree = "<group>"; };
 		186F638E24AEE22200569068 /* 짝지어 계산하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "짝지어 계산하기.swift"; path = "../짝지어 계산하기.swift"; sourceTree = "<group>"; };
 		186F639324AF020500569068 /* 후보키.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "후보키.swift"; sourceTree = "<group>"; };
@@ -314,18 +344,32 @@
 				184F39FE2491DABC00742A22 /* Remove Duplicates Rrom Sorted Array.swift */,
 				18AF28D62497091700EDFE13 /* 3sum closet.swift */,
 				18AF28D82497104B00EDFE13 /* Search in Rotated Sorted Array.swift */,
+				186D724825088A3E00CF3031 /* 36. Valid Sudoku.swift */,
 				18AF28DA2497165900EDFE13 /* Symmetric.swift */,
 				184F3A002491E81700742A22 /* 3sum.swift */,
 				184F3A02249234F700742A22 /* String to Integer.swift */,
 				180FF3C02494658A001B7451 /* Letter Combinations of a Phone Number.swift */,
+				186F4C8B25062E0E005356D5 /* 54. Spiral Matrix .swift */,
 				1819E55824E954FE00E3ECDB /* Next Permutation.swift */,
 				1878DDDB24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift */,
+				186D723E25074AF400CF3031 /* 66. Plus One.swift */,
 				1878DDDD24F0CFF9001612DF /* Combination Sum.swift */,
 				1878DDDF24F0DDD9001612DF /* Longest Valid Parentheses.swift */,
 				1878DDE124F1117A001612DF /* Permutations.swift */,
 				1878DDE324F11BE4001612DF /* Rotate Image.swift */,
+				186F4C8525062A4D005356D5 /* 43. Multiply Strings.swift */,
+				186D72442507BC6400CF3031 /* 63. Unique Paths II.swift */,
 				1878DDE724F12C27001612DF /* 53. Maximum Subarray.swift */,
 				1878DDE524F11E58001612DF /* Group Anagrams.swift */,
+				186D72422507B79300CF3031 /* 67. Add Binary.swift */,
+				186DBEE424F2281C00F26F53 /* 56. Merge Intervals.swift */,
+				186DBEE224F21A0800F26F53 /* 55. Jump Game.swift */,
+				186F4C8725062C0F005356D5 /* 50. Pow(x, n).swift */,
+				186D724025079C7000CF3031 /* Sum of Root To Leaf Binary Numbers.swift */,
+				186F4C8925062C95005356D5 /* 58. Length of Last Word.swift */,
+				186D724625087B3800CF3031 /* 64. Minimum Path Sum.swift */,
+				186DBEE624F22D1400F26F53 /* 62. Unique Paths.swift */,
+				186F4C832505B7E1005356D5 /* 40. Combination Sum II.swift */,
 			);
 			path = swiftLeetCode;
 			sourceTree = "<group>";
@@ -483,6 +527,7 @@
 				18B8FFD4247D2CAE00E33130 /* A + B - 7.swift */,
 				18AF28DC2497438A00EDFE13 /* 쿼드트리 1992.swift */,
 				189706DB24AB54DF001628D0 /* 별찍기 21.swift */,
+				186D723C2507439400CF3031 /* 큰 수 A+B.swift */,
 				18AF28DE24975F5F00EDFE13 /* 압축 1662.swift */,
 				18FD5CA6248A52B80081FAE2 /* 치즈 2636.swift */,
 				18AF28E0249788CA00EDFE13 /* 미세먼지 안녕! 17144.swift */,
@@ -578,21 +623,26 @@
 				189706CF24AAE3AE001628D0 /* 다음 큰 숫자.swift in Sources */,
 				186F639424AF020500569068 /* 후보키.swift in Sources */,
 				18752E4F24AD92B00072672B /* 점프와 순간이동.swift in Sources */,
+				186D724125079C7000CF3031 /* Sum of Root To Leaf Binary Numbers.swift in Sources */,
 				186F638F24AEE22200569068 /* 짝지어 계산하기.swift in Sources */,
+				186D724725087B3800CF3031 /* 64. Minimum Path Sum.swift in Sources */,
 				18FD5CA5248A32AF0081FAE2 /* 카드 구매하기 11052.swift in Sources */,
 				18CA2C1524AA02F1003ADCF1 /* 카펫.swift in Sources */,
 				18FE8FA12498849900F7E329 /* 크레인 인형뽑기 게임.swift in Sources */,
 				1873D29F24A8C3170015BD75 /* 최대공약수와 최소공배수.swift in Sources */,
 				18CA2C1124A9AC7A003ADCF1 /* 실패율.swift in Sources */,
 				1878DDE224F1117A001612DF /* Permutations.swift in Sources */,
+				186F4C8A25062C95005356D5 /* 58. Length of Last Word.swift in Sources */,
 				180FF3C72494AB4E001B7451 /* Generate Parentheses.swift in Sources */,
 				18741D7624B43257009EAEBD /* 올바른 괄호.swift in Sources */,
 				187B39BA24B5F7C9000E5AF1 /* 숫자 게임.swift in Sources */,
 				18AF28E1249788CA00EDFE13 /* 미세먼지 안녕! 17144.swift in Sources */,
+				186F4C8625062A4D005356D5 /* 43. Multiply Strings.swift in Sources */,
 				18741D8224B4995D009EAEBD /* 방문 길이.swift in Sources */,
 				188424EB249B4A12009BB9FE /* 자릿수 더하기.swift in Sources */,
 				18741D7C24B47F53009EAEBD /* 프렌즈4블록.swift in Sources */,
 				18B8FFDC247D319D00E33130 /* 1로 만들기.swift in Sources */,
+				186DBEE724F22D1400F26F53 /* 62. Unique Paths.swift in Sources */,
 				184F39FD2490F10800742A22 /* Merge Two sorted Lists.swift in Sources */,
 				18C20F5824ACBAD700D857D8 /* JadenCase 문자열 만들기.swift in Sources */,
 				18765C0924B7026D00AE5BEB /* 입국심사.swift in Sources */,
@@ -626,6 +676,7 @@
 				189706DC24AB54DF001628D0 /* 별찍기 21.swift in Sources */,
 				180FF3C12494658A001B7451 /* Letter Combinations of a Phone Number.swift in Sources */,
 				1878DDDC24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift in Sources */,
+				186D72452507BC6400CF3031 /* 63. Unique Paths II.swift in Sources */,
 				189706DA24AB3EFF001628D0 /* 타겟 넘버.swift in Sources */,
 				180FF3C3249472C3001B7451 /* IntegertoRoman.swift in Sources */,
 				187B113E24B82BC60043BEED /* 경주로 건설.swift in Sources */,
@@ -647,13 +698,17 @@
 				188424EF249B57A3009BB9FE /* 체육복.swift in Sources */,
 				18FD5CA1248A07990081FAE2 /* Longest Palindromic Substring.swift in Sources */,
 				184F39F0248F97F500742A22 /* zigzag conversion.swift in Sources */,
+				186F4C842505B7E1005356D5 /* 40. Combination Sum II.swift in Sources */,
 				18395D1E247F82EF002696CE /* DFS와BFS 1260.swift in Sources */,
 				187B39BD24B6002C000E5AF1 /* 기지국 건설.swift in Sources */,
 				1878DDE424F11BE4001612DF /* Rotate Image.swift in Sources */,
+				186D723F25074AF400CF3031 /* 66. Plus One.swift in Sources */,
 				18752E5324ADA99D0072672B /* 파일명 정렬.swift in Sources */,
 				187B39B224B57C8D000E5AF1 /* 가장 긴 팰린드롬.swift in Sources */,
+				186D723D2507439400CF3031 /* 큰 수 A+B.swift in Sources */,
 				18C20F5624ACA35D00D857D8 /* 최댓값과 최솟값.swift in Sources */,
 				18C20F5224AC7B4A00D857D8 /* 소수 찾기.swift in Sources */,
+				186D72432507B79300CF3031 /* 67. Add Binary.swift in Sources */,
 				18752E5D24AE06450072672B /* 다리를 지나는 트럭.swift in Sources */,
 				18752E5724ADC5320072672B /* n진수 게임.swift in Sources */,
 				1814429F248B44AE0003B1D2 /* z 1074.swift in Sources */,
@@ -671,9 +726,11 @@
 				187B39B424B58B21000E5AF1 /* 불량 사용자.swift in Sources */,
 				187B113C24B826050043BEED /* 가장 먼 노드.swift in Sources */,
 				18688C2424B02D6D00E9B1E4 /* Q2.swift in Sources */,
+				186DBEE324F21A0800F26F53 /* 55. Jump Game.swift in Sources */,
 				184F39F2248FA7E900742A22 /* Reverse Integer.swift in Sources */,
 				180FF3C52494A718001B7451 /* implement strSTR.swift in Sources */,
 				189706D424AB159F001628D0 /* 기능개발.swift in Sources */,
+				186F4C8C25062E0E005356D5 /* 54. Spiral Matrix .swift in Sources */,
 				18752E5524ADB9FA0072672B /* 압축.swift in Sources */,
 				187B39B624B5A227000E5AF1 /* 종이접기.swift in Sources */,
 				187B114624B895CC0043BEED /* 디스크 컨트롤러.swift in Sources */,
@@ -681,14 +738,17 @@
 				1817A988248512530047F55A /* Add Two Numbers .swift in Sources */,
 				1878DDE824F12C27001612DF /* 53. Maximum Subarray.swift in Sources */,
 				18B8FFE0247E246C00E33130 /* 스택수열 1874.swift in Sources */,
+				186F4C8825062C0F005356D5 /* 50. Pow(x, n).swift in Sources */,
 				18752E5B24ADFD880072672B /* 숫자 야구.swift in Sources */,
 				186F639624AF04D200569068 /* 영어 끝말잇기.swift in Sources */,
 				189706D224AB023C001628D0 /* 튜플.swift in Sources */,
 				18741D7A24B44AD6009EAEBD /* 뉴스 클러스터링.swift in Sources */,
+				186D724925088A3E00CF3031 /* 36. Valid Sudoku.swift in Sources */,
 				18752E5124AD98D90072672B /* 땅따먹기.swift in Sources */,
 				18B8FFDE247D437000E33130 /* main.swift in Sources */,
 				1873D29324A84B3E0015BD75 /* 섬 연결하기.swift in Sources */,
 				184F39FF2491DABC00742A22 /* Remove Duplicates Rrom Sorted Array.swift in Sources */,
+				186DBEE524F2281C00F26F53 /* 56. Merge Intervals.swift in Sources */,
 				1878DDDE24F0CFF9001612DF /* Combination Sum.swift in Sources */,
 				184F39F92490CD2900742A22 /* Longest Common Prefix.swift in Sources */,
 				18B8FFE2247E7CEC00E33130 /* 123더하기 9095.swift in Sources */,

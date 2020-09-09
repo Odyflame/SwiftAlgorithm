@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+func plusOne(_ digits: [Int]) -> [Int] {
+    var answer = [Int]()
+    var carry = 1
+    
+    for i in digits.reversed() {
+        answer.append( (carry + i) % 10  )
+        carry = (carry + i) / 10
+    }
+    
+    if carry > 0 {
+        answer.append(carry)
+    }
+    
+    return answer.reversed()
+}
