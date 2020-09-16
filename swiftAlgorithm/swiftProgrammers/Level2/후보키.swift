@@ -10,14 +10,7 @@ import Foundation
 
 //너무어렵다
 //func solution(_ relation:[[String]]) -> Int {
-//
 //    var candidate = [Int]()
-//
-//    let row = relation.count
-//    let col = relation[0].count
-//
-//    for
-//
-//
+//    
 //    return 0
 //}

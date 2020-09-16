@@ -25,17 +25,13 @@ import Foundation
 
 func removeDuplicates(_ nums: inout [Int]) -> Int {
     
-    if nums.count == 0 {
-        return 0
-    }
+    var idx = nums.count-1
     
-    var answer = 0
-    
-    for j in 1..<nums.count {
-        if nums[answer] != nums[j] {
-            answer += 1
-            nums[answer] = nums[j]
+    while idx > 1 {
+        if nums[idx] == nums[idx-2] {
+            nums.remove(at: idx)
         }
+        idx -= 1
     }
-    return answer + 1
+    return nums.count
 }

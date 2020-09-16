@@ -8,16 +8,15 @@
 
 //import Foundation
 //
-//func solution(_ board:[[Int]]) -> Int {
+//func solution1(_ board:[[Int]]) -> Int {
 //
-//    var answer = 0
 //    struct point {
 //        var x: Int
 //        var y: Int
 //        var pos: Int // 0 = up, 1 = down, 2 = left, 3 = right
 //    }
-//    var dx = [-1, 1, 0, 0]
-//    var dy = [0, 0, -1, 1]
+//    let dx = [-1, 1, 0, 0]
+//    let dy = [0, 0, -1, 1]
 //
 //    var dp = Array(repeating: Array(repeating: 9999999, count: 26), count: 26)
 //
@@ -34,7 +33,7 @@
 //    }
 //
 //    while !qu.isEmpty {
-//        var temp = qu.removeFirst()
+//        let temp = qu.removeFirst()
 //
 //        if temp.0.x == 0 && temp.0.y == 6{
 //            print(1)

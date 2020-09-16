@@ -45,3 +45,42 @@ import Foundation
 //    
 //    return answer
 //}
+
+
+//import Foundation
+//
+//func solution(_ msg:String) -> [Int] {
+//
+//    // 알파벳 리스트를 딕셔너리로 준비
+//    let alphabetList: [String] = (0..<26).map({String(UnicodeScalar("A".unicodeScalars.first!.value + $0)!)})
+//    var dict = [String : Int]()
+//    for (i, char) in alphabetList.enumerated() {
+//        dict[char] = i + 1
+//    }
+//
+//    var answer = [Int]()
+//    var searchWord = ""
+//
+//    for i in msg {
+//        searchWord += String(i)
+//
+//        // 찾는 단어가 없으면
+//        if dict[searchWord] == nil {
+//            // 사전에 추가
+//            dict[searchWord] = dict.count + 1
+//            // 찾는 단어의 길이보다 한글자 작은 값의 인덱스를 반환값에 추가
+//            answer.append(dict[String(searchWord.dropLast())]!)
+//            // 다음 찾을 단어를 searchWord에서 찾지 못했던 맨 마지막 문자로 설정
+//            searchWord = String(searchWord.popLast()!)
+//        } else {
+//            continue
+//        }
+//    }
+//
+//    // 맨 마지막에 남은 글자의 인덱스를 추가해줌
+//    if !searchWord.isEmpty {
+//        answer.append(dict[searchWord]!)
+//    }
+//
+//    return answer
+//}

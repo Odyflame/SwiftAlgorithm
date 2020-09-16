@@ -74,7 +74,7 @@
 
 import Foundation
 
-//func solution(_ gems:[String]) -> [Int] {
+//func solution1(_ gems:[String]) -> [Int] {
 //    var answer = [Int]()
 //    var mySet = Set(gems)
 //    
@@ -93,18 +93,12 @@ import Foundation
 //            
 //            myDic[gems[myStartIndex]]! -= 1
 //            if myDic[gems[myStartIndex]] == 0 {
-//                //myDic[gems[myStartIndex]] = nil
 //                myDic.removeValue(forKey: gems[myStartIndex])
 //            }
 //            myStartIndex += 1
 //        } else if myEndIndex == gems.count {
 //            break
 //        } else {
-////            if myDic[gems[myEndIndex]] == nil {
-////                myDic[gems[myEndIndex]] = 1
-////            } else {
-////                myDic[gems[myEndIndex]]! += 1
-////            }
 //            if let gem = myDic[gems[myEndIndex]] {
 //                myDic[gems[myEndIndex]] = gem + 1
 //            } else {
