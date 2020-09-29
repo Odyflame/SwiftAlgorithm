@@ -8,26 +8,26 @@
 
 import Foundation
 
-func solution(_ n:Int, _ a:Int, _ b:Int) -> Int
-{
-    var answer: Int = 1
-    var n = n, a = a, b = b
-    
-    if a > b {
-        swap(&a, &b)
-    }
-    
-    while true {
-        
-        if a + b == b * 2 - 1 {
-            if a % 2 == 1 { break }
-        }
-        
-        a = a % 2 == 0 ? a / 2 : a / 2 + 1
-        b = b % 2 == 0 ? b / 2 : b / 2 + 1
-        
-        answer += 1
-    }
-
-    return answer
-}
+//func solution(_ n:Int, _ a:Int, _ b:Int) -> Int
+//{
+//    var answer: Int = 1
+//    var n = n, a = a, b = b
+//    
+//    if a > b {
+//        swap(&a, &b)
+//    }
+//    
+//    while true {
+//        
+//        if a + b == b * 2 - 1 {
+//            if a % 2 == 1 { break }
+//        }
+//        
+//        a = a % 2 == 0 ? a / 2 : a / 2 + 1
+//        b = b % 2 == 0 ? b / 2 : b / 2 + 1
+//        
+//        answer += 1
+//    }
+//
+//    return answer
+//}
