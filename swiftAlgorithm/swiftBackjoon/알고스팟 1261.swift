@@ -29,19 +29,19 @@ func solution1261() {
         return a.cost < b.cost
     }
     
-    var priorityQueue = PriorityQueue(sort: DESC, elements: [Point]())
-    
-    dp[0][0] = 0
-    
-    priorityQueue.enqueue(Point(xpos: 0, ypos: 0, cost: 0))
-    while !priorityQueue.isEmpty {
-        var temp = priorityQueue.dequeue()!
-        
-        if arr[temp.xpos][temp.ypos] + temp.cost > dp[temp.xpos][temp.ypos] {
-            
-        }
-        
-        
-    }
+//    var priorityQueue = PriorityQueue(sort: DESC, elements: [Point]())
+//
+//    dp[0][0] = 0
+//
+//    priorityQueue.enqueue(Point(xpos: 0, ypos: 0, cost: 0))
+//    while !priorityQueue.isEmpty {
+//        var temp = priorityQueue.dequeue()!
+//
+//        if arr[temp.xpos][temp.ypos] + temp.cost > dp[temp.xpos][temp.ypos] {
+//
+//        }
+//
+//
+//    }
     
 }
