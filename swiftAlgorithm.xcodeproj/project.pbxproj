@@ -113,6 +113,9 @@
 		18765C0B24B734CE00AE5BEB /* 이중우선순위큐.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18765C0A24B734CE00AE5BEB /* 이중우선순위큐.swift */; };
 		187831C82522B7450000A103 /* 1Q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187831C72522B7450000A103 /* 1Q1.swift */; };
 		187831E8252341650000A103 /* 최소 힙 1927.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187831E7252341650000A103 /* 최소 힙 1927.swift */; };
+		1878541B2528357700A1435B /* 운동.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878541A2528357700A1435B /* 운동.swift */; };
+		1878541F25283C1F00A1435B /* 수 찾기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878541E25283C1F00A1435B /* 수 찾기.swift */; };
+		187854222528438000A1435B /* 개똥벌레 3020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187854212528438000A1435B /* 개똥벌레 3020.swift */; };
 		1878DDDC24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DDDB24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift */; };
 		1878DDDE24F0CFF9001612DF /* Combination Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DDDD24F0CFF9001612DF /* Combination Sum.swift */; };
 		1878DDE024F0DDD9001612DF /* Longest Valid Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DDDF24F0DDD9001612DF /* Longest Valid Parentheses.swift */; };
@@ -313,6 +316,9 @@
 		18765C0A24B734CE00AE5BEB /* 이중우선순위큐.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "이중우선순위큐.swift"; sourceTree = "<group>"; };
 		187831C72522B7450000A103 /* 1Q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1Q1.swift; sourceTree = "<group>"; };
 		187831E7252341650000A103 /* 최소 힙 1927.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "최소 힙 1927.swift"; sourceTree = "<group>"; };
+		1878541A2528357700A1435B /* 운동.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "운동.swift"; sourceTree = "<group>"; };
+		1878541E25283C1F00A1435B /* 수 찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "수 찾기.swift"; sourceTree = "<group>"; };
+		187854212528438000A1435B /* 개똥벌레 3020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "개똥벌레 3020.swift"; sourceTree = "<group>"; };
 		1878DDDB24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Find First and Last Position of Element in Sorted Array.swift"; sourceTree = "<group>"; };
 		1878DDDD24F0CFF9001612DF /* Combination Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combination Sum.swift"; sourceTree = "<group>"; };
 		1878DDDF24F0DDD9001612DF /* Longest Valid Parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Longest Valid Parentheses.swift"; sourceTree = "<group>"; };
@@ -476,6 +482,13 @@
 			path = implementation;
 			sourceTree = "<group>";
 		};
+		1864F2EE252C1E33004343A9 /* prefix sum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "prefix sum";
+			sourceTree = "<group>";
+		};
 		18688C2024B02D4F00E9B1E4 /* BoostCamp1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,6 +649,7 @@
 				186C6CD12512089B006E9CB8 /* 플로이드 11404.swift */,
 				186D23CB2526E6B2002E5835 /* 저울 10159.swift */,
 				186D23D925275904002E5835 /* 역사 1613.swift */,
+				1878541A2528357700A1435B /* 운동.swift */,
 			);
 			path = "Floyd Warshall";
 			sourceTree = "<group>";
@@ -646,6 +660,15 @@
 				187831E7252341650000A103 /* 최소 힙 1927.swift */,
 			);
 			path = "Priority Queue";
+			sourceTree = "<group>";
+		};
+		1878541D25283C1100A1435B /* Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				1878541E25283C1F00A1435B /* 수 찾기.swift */,
+				187854212528438000A1435B /* 개똥벌레 3020.swift */,
+			);
+			path = "Binary Search";
 			sourceTree = "<group>";
 		};
 		187945FA2520181F00FA5032 /* Naver2020 */ = {
@@ -731,6 +754,8 @@
 		18FD5C98248938B60081FAE2 /* swiftBackjoon */ = {
 			isa = PBXGroup;
 			children = (
+				1864F2EE252C1E33004343A9 /* prefix sum */,
+				1878541D25283C1100A1435B /* Binary Search */,
 				186D23D525274CEC002E5835 /* BackTracking */,
 				184E83322525D9960086D662 /* implementation */,
 				187831E6252341390000A103 /* Priority Queue */,
@@ -926,6 +951,7 @@
 				187A5363250DA22B0016C340 /* LQ4.swift in Sources */,
 				18765C0724B6DE6C00AE5BEB /* 배달.swift in Sources */,
 				18752E5924ADEFC90072672B /* 스킬트리.swift in Sources */,
+				1878541F25283C1F00A1435B /* 수 찾기.swift in Sources */,
 				1873D29D24A8B4020015BD75 /* 정수 내림차순으로 배치하기.swift in Sources */,
 				18CA2C1724AA0718003ADCF1 /* 피보나치 수.swift in Sources */,
 				187B114424B88E380043BEED /* 단어 변환.swift in Sources */,
@@ -975,6 +1001,7 @@
 				187B113C24B826050043BEED /* 가장 먼 노드.swift in Sources */,
 				18688C2424B02D6D00E9B1E4 /* Q2.swift in Sources */,
 				186DBEE324F21A0800F26F53 /* 55. Jump Game.swift in Sources */,
+				187854222528438000A1435B /* 개똥벌레 3020.swift in Sources */,
 				184F39F2248FA7E900742A22 /* Reverse Integer.swift in Sources */,
 				180FF3C52494A718001B7451 /* implement strSTR.swift in Sources */,
 				189706D424AB159F001628D0 /* 기능개발.swift in Sources */,
@@ -993,6 +1020,7 @@
 				18B8FFE0247E246C00E33130 /* 스택수열 1874.swift in Sources */,
 				186F4C8825062C0F005356D5 /* 50. Pow(x, n).swift in Sources */,
 				18752E5B24ADFD880072672B /* 숫자 야구.swift in Sources */,
+				1878541B2528357700A1435B /* 운동.swift in Sources */,
 				186C6CDD251259A6006E9CB8 /* 키 순서 2458.swift in Sources */,
 				186F639624AF04D200569068 /* 영어 끝말잇기.swift in Sources */,
 				189706D224AB023C001628D0 /* 튜플.swift in Sources */,

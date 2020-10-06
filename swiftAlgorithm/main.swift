@@ -12,5 +12,4 @@ import Foundation
 
 //var temp = "aabab"
 var temp = ["abc", "bca", "dbe"]
-//solution(&temp)
-solution1613()
+solution3020()
