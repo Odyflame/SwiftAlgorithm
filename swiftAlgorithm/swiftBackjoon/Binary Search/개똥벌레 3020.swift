@@ -66,44 +66,44 @@
 //    print( dp.min(), dp.filter( { $0 == dp.min() } ).count )
 //}
 
-import Foundation
-
-func solution3020() {
-    
-    let NH = readLine()!.split(separator: " ").map { Int($0)! }
-
-    var upDp = [Int](repeating: 0, count: NH[1])
-    var downDp = [Int](repeating: 0, count: NH[1])
-
-    var upAns = [Int](repeating: 0, count: NH[1] + 1)
-    var downAns = [Int](repeating: 0, count: NH[1] + 1)
-
-    for i in 0 ..< NH[0] {
-        var temp = Int(readLine()!)!
-        if i % 2 == 0 {
-            downDp[temp - 1] += 1
-        } else {
-            upDp[temp - 1] += 1
-        }
-    }
-
-    for i in stride(from: NH[1] - 1, through: 0, by: -1) {
-        upAns[i] = upDp[i] + upAns[i + 1]
-        downAns[i] = downDp[i] + downAns[i + 1]
-    }
-
-    var finalAnswer = (9999999, 0)
-
-    for i in 0 ..< NH[1] {
-        let temp = upAns[i] + downAns[NH[1] - i - 1]
-
-        if finalAnswer.0 > temp {
-            finalAnswer = (temp, 1)
-        } else if finalAnswer.0 == temp {
-            finalAnswer = (temp, finalAnswer.1 + 1)
-        }
-    }
-
-    print("\(finalAnswer.0) \(finalAnswer.1)")
-
-}
+//import Foundation
+//
+//func solution3020() {
+//    
+//    let NH = readLine()!.split(separator: " ").map { Int($0)! }
+//
+//    var upDp = [Int](repeating: 0, count: NH[1])
+//    var downDp = [Int](repeating: 0, count: NH[1])
+//
+//    var upAns = [Int](repeating: 0, count: NH[1] + 1)
+//    var downAns = [Int](repeating: 0, count: NH[1] + 1)
+//
+//    for i in 0 ..< NH[0] {
+//        var temp = Int(readLine()!)!
+//        if i % 2 == 0 {
+//            downDp[temp - 1] += 1
+//        } else {
+//            upDp[temp - 1] += 1
+//        }
+//    }
+//
+//    for i in stride(from: NH[1] - 1, through: 0, by: -1) {
+//        upAns[i] = upDp[i] + upAns[i + 1]
+//        downAns[i] = downDp[i] + downAns[i + 1]
+//    }
+//
+//    var finalAnswer = (9999999, 0)
+//
+//    for i in 0 ..< NH[1] {
+//        let temp = upAns[i] + downAns[NH[1] - i - 1]
+//
+//        if finalAnswer.0 > temp {
+//            finalAnswer = (temp, 1)
+//        } else if finalAnswer.0 == temp {
+//            finalAnswer = (temp, finalAnswer.1 + 1)
+//        }
+//    }
+//
+//    print("\(finalAnswer.0) \(finalAnswer.1)")
+//
+//}
