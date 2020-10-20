@@ -12,4 +12,9 @@ import Foundation
 
 //var temp = "aabab"
 var temp = ["abc", "bca", "dbe"]
-solution15681()
+
+//solution(2, [1300000000,700000000,668239490,618239490,568239490,568239486,518239486,157658638,157658634,100000000,100])
+//solution("SEOUL","DAEGU", "YEOSU", roads:[["ULSAN","BUSAN"],["DAEJEON","ULSAN"],["DAEJEON","GWANGJU"],["SEOUL","DAEJEON"],["SEOUL","ULSAN"],["DAEJEON","DAEGU"],["GWANGJU","BUSAN"],["DAEGU","GWANGJU"],["DAEGU","BUSAN"],["ULSAN","DAEGU"],["GWANGJU","YEOSU"],["BUSAN","YEOSU"]])
+
+//solution(3,[24,22,20,10,5,3,2,1] )
+solution1806()
