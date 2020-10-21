@@ -16,6 +16,7 @@ func solution1949() {
     var node = [[Int]](repeating: [Int](), count: N + 1)
     var dp = [[Int64]](repeating: [Int64](repeating: 1, count: N + 1), count: N + 1)
     var visit = [Bool](repeating: false, count: N + 1)
+    person.append(0)
     
     for i in 0 ..< N-1 {
         var temp = readLine()!.split(separator: " ").map { Int($0)! }
@@ -29,7 +30,7 @@ func solution1949() {
             
             visit[pos] = true
             dp[pos][0] = 0
-            dp[pos][1] = Int64(person[pos - 1])
+            dp[pos][1] = Int64(person[pos])
             
             for next in node[pos] {
                 if !visit[next] {

@@ -6,13 +6,13 @@
 //  Copyright © 2020 odyflame. All rights reserved.
 //
 
-import Foundation
-
-func solution12015() {
-    
-    var A = Int(readLine()!)!
-    var arr = readLine()!.split(separator: " ").map { Int($0)! }
-    
-    
-    
-}
+//import Foundation
+//
+//func solution12015() {
+//    
+//    var A = Int(readLine()!)!
+//    var arr = readLine()!.split(separator: " ").map { Int($0)! }
+//    
+//    
+//    
+//}
