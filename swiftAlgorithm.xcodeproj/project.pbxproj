@@ -18,6 +18,9 @@
 		1819E55924E954FE00E3ECDB /* Next Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819E55824E954FE00E3ECDB /* Next Permutation.swift */; };
 		18395D1E247F82EF002696CE /* DFS와BFS 1260.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18395D1D247F82EF002696CE /* DFS와BFS 1260.swift */; };
 		184E83342525D9A70086D662 /* Practice- Roll Call 9306.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E83332525D9A70086D662 /* Practice- Roll Call 9306.swift */; };
+		184F13A12541492B0073983B /* 연구소 14502.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F13A02541492B0073983B /* 연구소 14502.swift */; };
+		184F13A925414FF60073983B /* 쿼드압축 후 개수 세기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F13A825414FF60073983B /* 쿼드압축 후 개수 세기.swift */; };
+		184F13AC2541563A0073983B /* 트리 트리오 중간값.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F13AB2541563A0073983B /* 트리 트리오 중간값.swift */; };
 		184F39F0248F97F500742A22 /* zigzag conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F39EF248F97F500742A22 /* zigzag conversion.swift */; };
 		184F39F2248FA7E900742A22 /* Reverse Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F39F1248FA7E900742A22 /* Reverse Integer.swift */; };
 		184F39F42490B5D700742A22 /* Palindrom Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F39F32490B5D700742A22 /* Palindrom Number.swift */; };
@@ -237,6 +240,9 @@
 		1819E55824E954FE00E3ECDB /* Next Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Next Permutation.swift"; sourceTree = "<group>"; };
 		18395D1D247F82EF002696CE /* DFS와BFS 1260.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DFS와BFS 1260.swift"; path = "../DFS와BFS 1260.swift"; sourceTree = "<group>"; };
 		184E83332525D9A70086D662 /* Practice- Roll Call 9306.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Practice- Roll Call 9306.swift"; sourceTree = "<group>"; };
+		184F13A02541492B0073983B /* 연구소 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "연구소 14502.swift"; sourceTree = "<group>"; };
+		184F13A825414FF60073983B /* 쿼드압축 후 개수 세기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "쿼드압축 후 개수 세기.swift"; sourceTree = "<group>"; };
+		184F13AB2541563A0073983B /* 트리 트리오 중간값.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "트리 트리오 중간값.swift"; sourceTree = "<group>"; };
 		184F39EF248F97F500742A22 /* zigzag conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "zigzag conversion.swift"; sourceTree = "<group>"; };
 		184F39F1248FA7E900742A22 /* Reverse Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reverse Integer.swift"; sourceTree = "<group>"; };
 		184F39F32490B5D700742A22 /* Palindrom Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Palindrom Number.swift"; sourceTree = "<group>"; };
@@ -514,6 +520,14 @@
 			path = implementation;
 			sourceTree = "<group>";
 		};
+		184F139F254148FF0073983B /* Graph theory */ = {
+			isa = PBXGroup;
+			children = (
+				184F13A02541492B0073983B /* 연구소 14502.swift */,
+			);
+			path = "Graph theory";
+			sourceTree = "<group>";
+		};
 		1864F2EE252C1E33004343A9 /* prefix sum */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,7 +550,9 @@
 			isa = PBXGroup;
 			children = (
 				186C6CD62512325D006E9CB8 /* 두 개 뽑아서 더하기.swift */,
+				184F13AB2541563A0073983B /* 트리 트리오 중간값.swift */,
 				186C6CD825123639006E9CB8 /* 삼각 달팽이.swift */,
+				184F13A825414FF60073983B /* 쿼드압축 후 개수 세기.swift */,
 			);
 			name = "월간 코드 챌린지";
 			path = "월간 코드 챌린지";
@@ -820,6 +836,7 @@
 		18FD5C98248938B60081FAE2 /* swiftBackjoon */ = {
 			isa = PBXGroup;
 			children = (
+				184F139F254148FF0073983B /* Graph theory */,
 				18FEB52A253EB47C00413C4A /* Tree */,
 				187D4459253037C0006A64A1 /* Exponentiation by squaring */,
 				187D44552530015C006A64A1 /* Tree DP */,
@@ -1016,6 +1033,7 @@
 				1873D2A124A8CE210015BD75 /* 핸드폰 번호 가릭;.swift in Sources */,
 				18741D8024B491A7009EAEBD /* 멀리 뛰기.swift in Sources */,
 				189706DC24AB54DF001628D0 /* 별찍기 21.swift in Sources */,
+				184F13A925414FF60073983B /* 쿼드압축 후 개수 세기.swift in Sources */,
 				180FF3C12494658A001B7451 /* Letter Combinations of a Phone Number.swift in Sources */,
 				1878DDDC24F0CEF7001612DF /* Find First and Last Position of Element in Sorted Array.swift in Sources */,
 				186D72452507BC6400CF3031 /* 63. Unique Paths II.swift in Sources */,
@@ -1027,6 +1045,7 @@
 				1873D29924A8AC970015BD75 /* 두 정수 사이의 합.swift in Sources */,
 				18B8FFD5247D2CAE00E33130 /* A + B - 7.swift in Sources */,
 				187D446D2530728C006A64A1 /* CQ2.swift in Sources */,
+				184F13AC2541563A0073983B /* 트리 트리오 중간값.swift in Sources */,
 				18FE8FA5249897F100F7E329 /* 멀쩡한 사각형.swift in Sources */,
 				18741D7824B43A0E009EAEBD /* n개의 최소공배수.swift in Sources */,
 				18752E5F24AE105F0072672B /* 행렬의 곱셈.swift in Sources */,
@@ -1115,6 +1134,7 @@
 				186D725D250B307C00CF3031 /* 85. Maximal Rectangle.swift in Sources */,
 				18B8FFE0247E246C00E33130 /* 스택수열 1874.swift in Sources */,
 				186F4C8825062C0F005356D5 /* 50. Pow(x, n).swift in Sources */,
+				184F13A12541492B0073983B /* 연구소 14502.swift in Sources */,
 				18752E5B24ADFD880072672B /* 숫자 야구.swift in Sources */,
 				1878541B2528357700A1435B /* 운동.swift in Sources */,
 				186C6CDD251259A6006E9CB8 /* 키 순서 2458.swift in Sources */,
