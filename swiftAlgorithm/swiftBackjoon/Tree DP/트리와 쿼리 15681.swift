@@ -7,7 +7,7 @@
 //
 
 //import Foundation
-//
+
 //func solution15681() {
 //
 //    var NRQ = readLine()!.split(separator: " ").map { Int($0)! }
