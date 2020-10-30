@@ -19,4 +19,4 @@ import Foundation
 //solution2533()
 //countPerms(n: 5)
 //solution1662()
-solution2042()
+solution10868()
