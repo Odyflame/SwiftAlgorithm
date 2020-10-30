@@ -135,6 +135,7 @@
 		1878DECE254A6DDA00B63EDF /* 미친 로봇 1405.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DECD254A6DDA00B63EDF /* 미친 로봇 1405.swift */; };
 		1878DED3254A872A00B63EDF /* 멀티탭 스케줄링 1700 .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DED2254A872A00B63EDF /* 멀티탭 스케줄링 1700 .swift */; };
 		1878DED6254A920A00B63EDF /* 탈출 3055.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DED5254A920A00B63EDF /* 탈출 3055.swift */; };
+		1878DEDE254AE85900B63EDF /* 구간 합 구하기 2042.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DEDD254AE85900B63EDF /* 구간 합 구하기 2042.swift */; };
 		1878FB2F251F604600619543 /* 특정한 최단 경로 1504.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878FB2E251F604600619543 /* 특정한 최단 경로 1504.swift */; };
 		187945FC2520182D00FA5032 /* NQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187945FB2520182D00FA5032 /* NQ1.swift */; };
 		187A535D250DA20C0016C340 /* LQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187A535C250DA20C0016C340 /* LQ1.swift */; };
@@ -362,6 +363,7 @@
 		1878DECD254A6DDA00B63EDF /* 미친 로봇 1405.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "미친 로봇 1405.swift"; sourceTree = "<group>"; };
 		1878DED2254A872A00B63EDF /* 멀티탭 스케줄링 1700 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "멀티탭 스케줄링 1700 .swift"; sourceTree = "<group>"; };
 		1878DED5254A920A00B63EDF /* 탈출 3055.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "탈출 3055.swift"; sourceTree = "<group>"; };
+		1878DEDD254AE85900B63EDF /* 구간 합 구하기 2042.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "구간 합 구하기 2042.swift"; sourceTree = "<group>"; };
 		1878FB2E251F604600619543 /* 특정한 최단 경로 1504.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "특정한 최단 경로 1504.swift"; sourceTree = "<group>"; };
 		187945FB2520182D00FA5032 /* NQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQ1.swift; sourceTree = "<group>"; };
 		187A535C250DA20C0016C340 /* LQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQ1.swift; sourceTree = "<group>"; };
@@ -763,6 +765,14 @@
 			path = Greedy;
 			sourceTree = "<group>";
 		};
+		1878DEDC254AE83500B63EDF /* Segment Tree */ = {
+			isa = PBXGroup;
+			children = (
+				1878DEDD254AE85900B63EDF /* 구간 합 구하기 2042.swift */,
+			);
+			path = "Segment Tree";
+			sourceTree = "<group>";
+		};
 		187945FA2520181F00FA5032 /* Naver2020 */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,6 +885,7 @@
 		18FD5C98248938B60081FAE2 /* swiftBackjoon */ = {
 			isa = PBXGroup;
 			children = (
+				1878DEDC254AE83500B63EDF /* Segment Tree */,
 				1878DED1254A829500B63EDF /* Greedy */,
 				180BB0342546A5A60023D61B /* Stack */,
 				184F139F254148FF0073983B /* Graph theory */,
@@ -1016,6 +1027,7 @@
 				18CA2C1524AA02F1003ADCF1 /* 카펫.swift in Sources */,
 				18FE8FA12498849900F7E329 /* 크레인 인형뽑기 게임.swift in Sources */,
 				180BB02C2542A7290023D61B /* 사회망 서비스 2533.swift in Sources */,
+				1878DEDE254AE85900B63EDF /* 구간 합 구하기 2042.swift in Sources */,
 				1873D29F24A8C3170015BD75 /* 최대공약수와 최소공배수.swift in Sources */,
 				186D72532508C51D00CF3031 /* 75. Sort Colors.swift in Sources */,
 				18CA2C1124A9AC7A003ADCF1 /* 실패율.swift in Sources */,
