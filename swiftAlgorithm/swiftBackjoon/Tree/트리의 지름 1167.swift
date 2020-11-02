@@ -1,5 +1,5 @@
 //
-//  트리 트리오 중간값.swift
+//  트리의 지름 1167.swift
 //  swiftAlgorithm
 //
 //  Created by apple on 2020/11/02.
@@ -7,4 +7,3 @@
 //
 
 import Foundation
-

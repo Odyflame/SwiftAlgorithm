@@ -8,6 +8,44 @@
 
 //import Foundation
 //
+//func solution1967(){
+//    
+//    let N = Int(readLine()!)!
+//    var nodes = [[(Int, Int)]](repeating: [(Int, Int)](), count: N + 1)
+//    var visit = [Bool](repeating: false, count: N + 1)
+//    
+//    for i in 0 ..< N {
+//        let temp = readLine()!.components(separatedBy: " ").map { Int($0)! }
+//        
+//        nodes[temp[0]].append( (temp[1], temp[2]) )
+//        nodes[temp[1]].append((temp[0], temp[2]))
+//    }
+//    
+//    var answer = (0, 0)
+//    func DFS(depth: Int, sum: Int) -> (Int, Int) {
+//        
+//        visit[depth] = true
+//        
+//        for node in nodes[depth] {
+//            DFS(depth: node.0, sum: sum + node.1)
+//        }
+//        
+//        if sum > answer.1 {
+//            answer.1 = sum
+//            answer.0 = depth
+//        }
+//        
+//        return answer
+//    }
+//    
+//    var startPos = DFS(depth: 1, sum: 0)
+//    visit = [Bool](repeating: false, count: N + 1)
+//    var endPos = DFS(depth: startPos.0, sum: 0)
+//    
+//    
+//    
+//}
+
 //func solution1967() {
 //
 //    struct Node {
