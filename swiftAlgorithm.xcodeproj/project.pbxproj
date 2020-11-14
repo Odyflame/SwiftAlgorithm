@@ -21,6 +21,7 @@
 		180FF3C72494AB4E001B7451 /* Generate Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF3C62494AB4E001B7451 /* Generate Parentheses.swift */; };
 		180FF3C92494BCD8001B7451 /* Divide Two Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FF3C82494BCD8001B7451 /* Divide Two Integer.swift */; };
 		1814429F248B44AE0003B1D2 /* z 1074.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814429E248B44AE0003B1D2 /* z 1074.swift */; };
+		1815C818255FD91000708FC8 /* 공장 7578.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815C817255FD91000708FC8 /* 공장 7578.swift */; };
 		1817A986248510000047F55A /* 1 Two sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817A985248510000047F55A /* 1 Two sum.swift */; };
 		1817A988248512530047F55A /* Add Two Numbers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817A987248512530047F55A /* Add Two Numbers .swift */; };
 		1819E55924E954FE00E3ECDB /* Next Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819E55824E954FE00E3ECDB /* Next Permutation.swift */; };
@@ -273,6 +274,7 @@
 		180FF3C62494AB4E001B7451 /* Generate Parentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Generate Parentheses.swift"; sourceTree = "<group>"; };
 		180FF3C82494BCD8001B7451 /* Divide Two Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Divide Two Integer.swift"; sourceTree = "<group>"; };
 		1814429E248B44AE0003B1D2 /* z 1074.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "z 1074.swift"; sourceTree = "<group>"; };
+		1815C817255FD91000708FC8 /* 공장 7578.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "공장 7578.swift"; sourceTree = "<group>"; };
 		1817A985248510000047F55A /* 1 Two sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1 Two sum.swift"; sourceTree = "<group>"; };
 		1817A987248512530047F55A /* Add Two Numbers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Two Numbers .swift"; sourceTree = "<group>"; };
 		1819E55824E954FE00E3ECDB /* Next Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Next Permutation.swift"; sourceTree = "<group>"; };
@@ -996,6 +998,7 @@
 				18B8FFE6247EA3CE00E33130 /* 숫자카드2 10816.swift */,
 				18395D1D247F82EF002696CE /* DFS와BFS 1260.swift */,
 				1814429E248B44AE0003B1D2 /* z 1074.swift */,
+				1815C817255FD91000708FC8 /* 공장 7578.swift */,
 			);
 			path = swiftBackjoon;
 			sourceTree = "<group>";
@@ -1100,6 +1103,7 @@
 				186F638F24AEE22200569068 /* 짝지어 계산하기.swift in Sources */,
 				186D724725087B3800CF3031 /* 64. Minimum Path Sum.swift in Sources */,
 				186D725F250B3F8400CF3031 /* 80. Remove Duplicates from Sorted Array II.swift in Sources */,
+				1815C818255FD91000708FC8 /* 공장 7578.swift in Sources */,
 				1804BBE62546BE12006D913E /* 압축 1662.swift in Sources */,
 				189F5F94254000D500DF40B9 /* 수들의 합 1789.swift in Sources */,
 				184E83342525D9A70086D662 /* Practice- Roll Call 9306.swift in Sources */,
