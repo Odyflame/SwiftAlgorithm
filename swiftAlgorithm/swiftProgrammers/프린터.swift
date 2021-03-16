@@ -42,3 +42,13 @@ import Foundation
 //    
 //    return sum
 //}
+
+//func solution(_ priorities:[Int], _ location:Int) -> Int {
+//
+//    var priorities = priorities.map(<#T##transform: (Int) throws -> T##(Int) throws -> T#>)
+//    while !priorities.isEmpty {
+//
+//    }
+//
+//    return 0
+//}

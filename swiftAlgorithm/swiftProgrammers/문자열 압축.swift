@@ -6,8 +6,6 @@
 //  Copyright © 2020 odyflame. All rights reserved.
 //
 
-//import Foundation
-//
 //func solution(_ s:String) -> Int {
 //
 //    var answer = s
@@ -29,8 +27,9 @@
 //
 //        var tempSrr = s
 //
+//        // 같은 문자가 있을 때까지
 //        while index <= tempSrr.count - i {
-//
+//            
 //            var temp = String(tempSrr[index..<index+i])
 //
 //            if index+i+i > tempSrr.count - 1 {

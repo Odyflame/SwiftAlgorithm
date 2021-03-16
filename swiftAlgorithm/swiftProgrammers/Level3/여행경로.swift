@@ -7,24 +7,39 @@
 //
 
 //import Foundation
-//
+
 //func solution(_ tickets:[[String]]) -> [String] {
-//    
-//    struct ticket {
-//        var startArea: String
-//        var list = [[String]]()
-//        var answer = [String]()
-//        
-//        static func < ( a: ticket, b: ticket) -> Bool {
-//            return a.startArea < b.startArea
+//
+//    var answer = [String]()
+//
+//    var path = [String]() //
+//    var visited = Array(repeating: false, count: tickets.count) // 방문여부
+//    let arr = tickets.sorted(by: { $0[1] < $1[1] } )
+//
+//    func dfs(_ depth: Int,
+//             _ airport: String,
+//             _ answer: inout [String]
+//             ) {
+//
+//        path.append(airport)
+//
+//        if depth == tickets.count { answer = path; return }
+//
+//        for i in 0..<tickets.count where answer.isEmpty {
+//            let information: (start: String, end: String) = (tickets[i].first!, tickets[i].last!)
+//
+//            if visited[i] == false && airport == information.start {
+//                visited[i] = true
+//                dfs(depth + 1, information.end, &answer)
+//                visited[i] = false
+//            }
 //        }
+//
+//        path.removeLast()
 //    }
-//    
-//    var ticketList = [ticket]()
-//    
-//    for i in tickets {
-//        
-//    }
-//    
-//    return []
+//
+//    dfs(0, "ICN", &answer)
+//
+//    return answer
 //}
+
