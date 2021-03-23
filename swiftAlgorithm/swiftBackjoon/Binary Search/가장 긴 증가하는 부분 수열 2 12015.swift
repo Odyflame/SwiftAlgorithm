@@ -6,42 +6,46 @@
 //  Copyright © 2020 odyflame. All rights reserved.
 //
 
-import Foundation
-
-func lower
-
-func solution12015() {
-    
-    var A = Int(readLine()!)!
-    var arr = readLine()!.split(separator: " ").map { Int($0)! }
-    
-    var dp = [Int]()
-    
-    for i in 0 ..< A {
-        if dp.isEmpty || dp.last! < arr[i] {
-            dp.append(arr[i])
-        } else {
-            var left = 0
-            var right = dp.count - 1
-            var mid = 0
-            
-            while left <= right {
-                mid = (left + right) / 2
-                
-                if dp[mid] > arr[i] {
-                    right = mid - 1
-                } else {
-                    left = mid
-                }
-                
-            }
-            
-            dp.insert(arr[i], at: mid + 1)
-        }
-    }
-    
-    print(dp.count)
-}
+//import Foundation
+//
+//func solution12015() {
+//    
+//    var A = Int(readLine()!)!
+//    var arr = readLine()!.split(separator: " ").map { Int($0)! }
+//    
+//    var dp = [Int]()
+//    
+//    func getLowerBound(_ find: Int, containList: [Int]) -> Int {
+//        var left = 0
+//        var right = containList.count - 1
+//        var mid = 0
+//        
+//        while left < right {
+//            mid = (left + right) / 2
+//            
+//            if containList[mid] < find {
+//                left = mid + 1
+//            } else {
+//                right = mid
+//            }
+//        }
+//        
+//        return right
+//    }
+//    
+//    
+//    for i in 0 ..< A {
+//        if dp.isEmpty || dp.last! < arr[i] {
+//            dp.append(arr[i])
+//        } else {
+//            var index = getLowerBound(arr[i], containList: dp)
+//            dp[index] = arr[i]
+//            
+//        }
+//    }
+//    
+//    print(dp.count)
+//}
 
 //func solution12015() {
 //

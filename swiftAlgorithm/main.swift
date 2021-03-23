@@ -17,4 +17,4 @@ import Foundation
 
 //solution2751()
 
-solution12015()
+solution1074()
