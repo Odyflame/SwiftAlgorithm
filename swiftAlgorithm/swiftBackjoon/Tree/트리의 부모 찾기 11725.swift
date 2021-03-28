@@ -50,3 +50,36 @@
 //        print(tree[i]!)
 //    }
 //}
+
+//func solution11725() {
+//    let N = Int(readLine()!)!
+//    var tree = [[Int]](repeating: [Int](), count: N)
+//    
+//    for _ in 1 ..< N {
+//        var temp = readLine()!.split(separator: " ").map { Int($0)! }
+//        tree[temp[0] - 1].append(temp[1] - 1)
+//        tree[temp[1] - 1].append(temp[0] - 1)
+//    }
+//    
+//    var check = [Bool](repeating: false, count: N)
+//    var dp = [Int](repeating: 0, count: N)
+//    
+//    var qu = [0]
+//    check[0] = true
+//    
+//    while !qu.isEmpty {
+//        var top = qu.removeFirst()
+//        
+//        for i in tree[top] {
+//            if !check[i] {
+//                dp[i] = top
+//                qu.append(i)
+//                check[i] = true
+//            }
+//        }
+//    }
+//    
+//    for i in 1 ..< N {
+//        print(dp[i] + 1)
+//    }
+//}
