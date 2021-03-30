@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+func solution12865() {
+    
+}
