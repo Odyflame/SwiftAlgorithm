@@ -74,3 +74,41 @@
 //    print()
 //    postOrder(node: ans)
 //}
+
+import Foundation
+
+func solution1991() {
+    
+    class Node {
+        var value: String
+        var left: String
+        var right: String
+        
+        init(value: String, left: String, right: String) {
+            self.value = value
+            self.left = left
+            self.right = right
+        }
+    }
+    
+    var n = Int(readLine()!)!
+    
+    var tree = [String: Node]()
+    
+    func preOrder(node: Node) {
+        print(tree[node.value]?.value)
+        if node.left != "." {
+            preOrder(node: tree[node.left]!)
+        }
+        if node.right != "."{
+            preOrder(node: tree[node.right]!)
+        }
+    }
+    
+    for _ in 0 ..< n {
+        var temp = readLine()!.split(separator: " ").map { String($0) }
+        
+        tree[temp[0]] = Node(value: temp[0], left: temp[1], right: temp[2])
+    }
+    
+}
