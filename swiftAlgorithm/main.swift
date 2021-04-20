@@ -17,4 +17,5 @@ import Foundation
 
 //solution2751()
 
-solution2914()
+//solution11([93, 30, 55], [1, 30, 5])
+solution11("LULLLLLLU")

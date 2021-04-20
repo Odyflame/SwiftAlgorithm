@@ -10,7 +10,7 @@
 //
 //func solution2914() {
 //    var srr = readLine()!
-//    
+//
 //    srr = srr.replacingOccurrences(of: "c=", with: "!")
 //    srr = srr.replacingOccurrences(of: "c-", with: "@")
 //    srr = srr.replacingOccurrences(of: "dz=", with: "#")
@@ -19,6 +19,6 @@
 //    srr = srr.replacingOccurrences(of: "z=", with: "^")
 //    srr = srr.replacingOccurrences(of: "lj", with: "&")
 //    srr = srr.replacingOccurrences(of: "nj", with: "*")
-//    
+//
 //    print(srr.count)
 //}

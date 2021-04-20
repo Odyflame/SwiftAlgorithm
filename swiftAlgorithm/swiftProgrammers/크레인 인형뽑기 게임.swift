@@ -9,28 +9,26 @@
 import Foundation
 
 //func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
-//    
+//
 //    var answer = 0
-//    
+//
 //    var basket = [Int]()
-//    var tempBoard = board
-//    
-//    
-//    for i in moves {
-//        for j in 0 ..< tempBoard.count {
-//            
-//            if tempBoard[j][i] != 0 {
-//                
-//                if basket.last == tempBoard[j][i] {
+//    var board = board
+//
+//    for move in moves {
+//        for j in 0 ..< board.count {
+//            if board[j][move - 1] != 0 {
+//                if basket.last == board[j][move - 1] {
 //                    basket.removeLast()
 //                    answer += 2
 //                } else {
-//                    basket.append(tempBoard[j][i])
+//                    basket.append(board[j][move - 1])
 //                }
-//                tempBoard[j][i] = 0
+//                board[j][move - 1] = 0
 //                break
 //            }
 //        }
 //    }
+//
 //    return answer
 //}
