@@ -81,46 +81,46 @@
 //    return id
 //}
 
-func solution(_ new_id:String) -> String {
-    var res = new_id.lowercased() //소분자 치환
-
-    var removeStr: [String] = []
-    for char in res.utf16 {
-        if (char >= 97 && char <= 122) || (char >= 48 && char <= 57 ) || char == 45 || char == 95 || char == 46 {
-            if let temp = UnicodeScalar(char) {
-                removeStr.append(String(temp))
-            }
-        }
-    }
-    res = removeStr.joined()
-
-    let arrStr = res.split{ $0 == "." }.map{ String($0) }
-    var tempStr = ""
-    for element in arrStr {
-        tempStr += "." + element
-    }
-    res = tempStr
-
-    if res.hasPrefix(".") { let _ = res.removeFirst() }
-    if res.hasSuffix(".") { let _ = res.removeLast() }
-
-    if res.count == 0 { res = "a" }
-
-    if res.count > 15 {
-        let index = res.index(res.startIndex, offsetBy: 15)
-        res = String(res[..<index])
-    }
-    if res.hasSuffix(".") { let _ = res.removeLast() }
-
-    if res.count <= 2 {
-        let temp = String(res.last ?? " ")
-        for _ in 0 ..< 3 {
-            if res.count == 3 {
-                break
-            } else {
-                res += temp
-            }
-        }
-    }
-    return res
-}
+//func solution(_ new_id:String) -> String {
+//    var res = new_id.lowercased() //소분자 치환
+//
+//    var removeStr: [String] = []
+//    for char in res.utf16 {
+//        if (char >= 97 && char <= 122) || (char >= 48 && char <= 57 ) || char == 45 || char == 95 || char == 46 {
+//            if let temp = UnicodeScalar(char) {
+//                removeStr.append(String(temp))
+//            }
+//        }
+//    }
+//    res = removeStr.joined()
+//
+//    let arrStr = res.split{ $0 == "." }.map{ String($0) }
+//    var tempStr = ""
+//    for element in arrStr {
+//        tempStr += "." + element
+//    }
+//    res = tempStr
+//
+//    if res.hasPrefix(".") { let _ = res.removeFirst() }
+//    if res.hasSuffix(".") { let _ = res.removeLast() }
+//
+//    if res.count == 0 { res = "a" }
+//
+//    if res.count > 15 {
+//        let index = res.index(res.startIndex, offsetBy: 15)
+//        res = String(res[..<index])
+//    }
+//    if res.hasSuffix(".") { let _ = res.removeLast() }
+//
+//    if res.count <= 2 {
+//        let temp = String(res.last ?? " ")
+//        for _ in 0 ..< 3 {
+//            if res.count == 3 {
+//                break
+//            } else {
+//                res += temp
+//            }
+//        }
+//    }
+//    return res
+//}

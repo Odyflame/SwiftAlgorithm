@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+func solution(_ k:Int64, _ room_number:[Int64]) -> [Int64] {
+    return []
+}

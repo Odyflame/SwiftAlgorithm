@@ -6,7 +6,7 @@
 //  Copyright © 2020 odyflame. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 //func solution(_ str1:String, _ str2:String) -> Int {
 //
@@ -77,3 +77,20 @@ import Foundation
 //        }
 //    }
 //}
+
+import Foundation
+
+func solution(_ str1:String, _ str2:String) -> Int {
+    
+    var str1 = str1.uppercased()
+    var str2 = str2.uppercased()
+    
+    var strSet1 = Set<String>()
+    var strSet2 = Set<String>()
+    
+    for index in 0 ..< str1.count {
+        
+    }
+    
+    return 0
+}
