@@ -7,7 +7,7 @@
 //
 
 //import Foundation
-
+//
 //func solution(_ str1:String, _ str2:String) -> Int {
 //
 //    var str1 = str1.uppercased()
@@ -82,15 +82,70 @@ import Foundation
 
 func solution(_ str1:String, _ str2:String) -> Int {
     
-    var str1 = str1.uppercased()
-    var str2 = str2.uppercased()
+    var str1 = Array(str1.uppercased())
+    var str2 = Array(str2.uppercased())
     
-    var strSet1 = Set<String>()
-    var strSet2 = Set<String>()
+    var strSet1 = [String]()
+    var strSet2 = [String]()
     
-    for index in 0 ..< str1.count {
+    for index in 0 ..< str1.count - 1 {
         
+        let t1 = String(str1[index])
+        let t2 = String(str1[index + 1])
+        
+        if t1.isAlpha() && t2.isAlpha() {
+            var temp = t1 + t2
+            strSet1.append(temp)
+        }
     }
     
-    return 0
+    for index in 0 ..< str2.count - 1 {
+        
+        let t1 = String(str2[index])
+        let t2 = String(str2[index + 1])
+        
+        if t1.isAlpha() && t2.isAlpha() {
+            var temp = t1 + t2
+            strSet2.append(temp)
+        }
+    }
+    
+    var chaCount = 0
+    var str1Count = strSet1.count
+    var str2Count = strSet2.count
+    if strSet1.count < strSet2.count {
+        for str in strSet1 {
+            if strSet2.contains(str) { // 이것이 공집합
+                let index = strSet2.firstIndex(of: str)
+                strSet2.remove(at: index!)
+                chaCount += 1
+            }
+        }
+    } else {
+        for str in strSet2 {
+            if strSet1.contains(str) { // 이것이 공집합
+                let index = strSet1.firstIndex(of: str)
+                strSet1.remove(at: index!)
+                chaCount += 1
+            }
+        }
+    }
+    
+    if strSet2.count + strSet1.count == chaCount {
+        return 65536
+    } else {
+        var answer = Double( chaCount) / Double(str1Count + str2Count - chaCount )
+        return Int(answer * 65536)
+    }
+}
+
+extension String {
+    func isAlpha() -> Bool {
+        switch self {
+        case "A"..."Z", "a"..."z":
+            return true
+        default:
+            return false
+        }
+    }
 }

@@ -6,37 +6,33 @@
 //  Copyright © 2020 odyflame. All rights reserved.
 //
 
-import Foundation
-
-func solution(_ cacheSize:Int, _ cities:[String]) -> Int {
-    
-    var answer = 0
-    var caches = [String]()
-    
-    var cities = cities.map { $0.uppercased() }
-    
-    if cacheSize > 0 {
-        
-        for city in cities {
-            if caches.contains(city) {
-                caches.remove(at: caches.index(of: city)!)
-                caches.append(city)
-                answer += 1
-            } else {
-                if caches.count < cacheSize {
-                    caches.append(city)
-                    answer += 5
-                } else {
-                    caches.removeFirst()
-                    caches.append(city)
-                    answer += 5
-                }
-            }
-        }
-        
-    } else {
-        answer += cities.count * 5
-    }
-    
-    return answer
-}
+//import Foundation
+//
+//func solution(_ cacheSize:Int, _ cities:[String]) -> Int {
+//
+//    var stack = [String]()
+//    var answer = 0
+//
+//    var cities = cities.map { $0.uppercased() }
+//
+//    if cacheSize < 0 {
+//        return cacheSize * 5
+//    }
+//    for city in cities {
+//        if stack.contains(city) {
+//            answer += 1
+//        } else {
+//            if stack.count < cacheSize {
+//                stack.append(city)
+//                answer += 5
+//            } else {
+//                stack.removeFirst()
+//                stack.append(city)
+//                answer += 5
+//            }
+//        }
+//    }
+//
+//
+//    return answer
+//}
