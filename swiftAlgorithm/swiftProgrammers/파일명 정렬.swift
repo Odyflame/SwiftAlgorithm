@@ -124,7 +124,8 @@ func solution(_ files:[String]) -> [String] {
             default:
                 n = false
                 t = false
-                tail = String(srr[index..<file.count])
+                tail = String(srr[index...])
+                break
             }
             index += 1
         }
