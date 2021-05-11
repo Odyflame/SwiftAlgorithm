@@ -175,3 +175,261 @@ import Foundation
 //    }
 //    return answer
 //}
+
+//public struct Heap<Element: Equatable> {
+//
+//    var elements: [Element] = []
+//    let sort: (Element, Element) -> Bool
+//
+//    public init(sort: @escaping (Element, Element) -> Bool, elements: [Element] = []) {
+//        self.sort = sort
+//        self.elements = elements
+//
+//        if !elements.isEmpty {
+//            for i in stride(from: elements.count / 2 - 1, through: 0, by: -1) {
+//                siftDown(from: i)
+//            }
+//        }
+//    }
+//
+//    public var isEmpty: Bool {
+//        return elements.isEmpty
+//    }
+//
+//    public var count: Int {
+//        return elements.count
+//    }
+//
+//    public func peek() -> Element? {
+//        return elements.first
+//    }
+//
+//    func leftChildIndex(ofParentAt index: Int) -> Int {
+//        return (2 * index) + 1
+//    }
+//
+//    func rightChildIndex(ofParentAt index: Int) -> Int {
+//        return (2 * index) + 2
+//    }
+//
+//    func parentIndex(ofChildAt index: Int) -> Int {
+//        return (index - 1) / 2
+//    }
+//
+//    public mutating func remove() -> Element? {
+//        guard !isEmpty else {
+//            return nil
+//        }
+//        elements.swapAt(0, count - 1)
+//        defer {
+//            siftDown(from: 0)
+//        }
+//        return elements.removeLast()
+//    }
+//
+//    mutating func siftDown(from index: Int) {
+//        var parent = index
+//        while true {
+//            let left = leftChildIndex(ofParentAt: parent)
+//            let right = rightChildIndex(ofParentAt: parent)
+//            var candidate = parent
+//
+//            //print("count: \(count), left: \(left), right: \(right)")
+//            if left < count && sort(elements[left], elements[candidate]) {
+//                candidate = left
+//                //print("candidate: \(candidate), sort:\(sort(elements[left], elements[candidate]))")
+//            }
+//            if right < count && sort(elements[right], elements[candidate]) {
+//                candidate = right
+//                //print("candidate: \(candidate), sort:\(sort(elements[right], elements[candidate]))")
+//            }
+//            if candidate == parent {
+//                return
+//            }
+//            elements.swapAt(parent, candidate)
+//            parent = candidate
+//        }
+//    }
+//
+//    public mutating func insert(_ element: Element) {
+//        elements.append(element)
+//        siftUp(from: elements.count - 1)
+//    }
+//
+//    mutating func siftUp(from index: Int) {
+//        var child = index
+//        var parent = parentIndex(ofChildAt: child)
+//        while child > 0 && sort(elements[child], elements[parent]) {
+//            elements.swapAt(child, parent)
+//            child = parent
+//            parent = parentIndex(ofChildAt: child)
+//        }
+//    }
+//
+//    mutating func remove(at index: Int) -> Element? {
+//        guard index < elements.count else {
+//            return nil
+//        }
+//        if index == elements.count - 1 {
+//            return elements.removeLast()
+//        } else {
+//            elements.swapAt(index, elements.count - 1)
+//            defer {
+//                siftDown(from: index)
+//                siftUp(from: index)
+//            }
+//            return elements.removeLast()
+//        }
+//    }
+//
+//    func index(of element: Element, startingAt i: Int) -> Int? {
+//        if i >= count { return nil }
+//        if sort(element, elements[i]) { return nil }
+//        if element == elements[i] { return i }
+//        if let j = index(of: element, startingAt: leftChildIndex(ofParentAt: i)) { return j }
+//        if let j = index(of: element, startingAt: rightChildIndex(ofParentAt: i)) { return j }
+//        return nil
+//    }
+//}
+//
+//public protocol Queue {
+//    associatedtype Element
+//    mutating func enqueue(_ element: Element) -> Bool
+//    mutating func dequeue() -> Element?
+//    var isEmpty: Bool { get }
+//    var peek: Element? { get }
+//}
+//
+//public struct PriorityQueue<Element: Equatable>: Queue { // 1
+//    private var heap: Heap<Element> // 2
+//    public init(sort: @escaping (Element, Element) -> Bool,
+//         elements: [Element] = []) { // 3
+//        heap = Heap(sort: sort, elements: elements)
+//    }
+//
+//    public var isEmpty: Bool { return heap.isEmpty }
+//    public var peek: Element? { return heap.peek() }
+//
+//    public mutating func enqueue(_ element: Element) -> Bool { // 1
+//        heap.insert(element)
+//        return true
+//    }
+//    public mutating func dequeue() -> Element? { // 2
+//        return heap.remove()
+//    }
+//}
+//
+//func solution(_ jobs:[[Int]]) -> Int {
+//
+//    var time = 0
+//    var total = 0
+//    var index = 0
+//
+//    var sortedJobs = jobs.sorted {
+//        return $0[0] < $1[0]
+//    }
+//
+//    let firstTime = sortedJobs[0][0]
+//    if firstTime != 0 {
+//        for i in sortedJobs.indices {
+//            sortedJobs[i][0] -= firstTime
+//        }
+//    }
+//
+//    var priorityQueue = PriorityQueue<[Int]> {
+//        return $0[1] == $1[1] ? $0[0] < $1[0] : $0[1] < $1[1]
+//    }
+//
+//    while sortedJobs.count > index || !priorityQueue.isEmpty {
+//
+//        while index < sortedJobs.count && sortedJobs[index][0] <= time {
+//            priorityQueue.enqueue(sortedJobs[index])
+//            index += 1
+//        }
+//
+//        if let top = priorityQueue.dequeue() {
+//            time += top[1]
+//            total += time - top[0]
+//        } else {
+//            time = sortedJobs[index][0]
+//        }
+//
+//    }
+//
+//    return total / jobs.count
+//}
+
+
+
+// 조수환님의 코드
+//struct Work: Comparable {
+//    let arrivedTime: Int
+//    let processTime: Int
+//
+//    static func < (_ lhs: Work, _ rhs: Work) -> Bool {
+//        return lhs.processTime < rhs.processTime
+//    }
+//}
+//
+//extension Array where Element == Work {
+//    mutating func binaryInsert(_ element: Work) {
+//        if isEmpty {
+//            self.append(element)
+//        } else {
+//            var left = 0
+//            var right = count-1
+//
+//           while left <= right {
+//                let mid = (left+right)/2
+//
+//                if self[mid]<element {
+//                    left = mid+1
+//                } else {
+//                    right = mid-1
+//                }
+//            }
+//
+//            self.insert(element, at: left)
+//        }
+//    }
+//}
+//
+//func solution(_ jobs:[[Int]]) -> Int {
+//    let sorted = jobs.sorted {
+//        if $0[0] != $1[0] {
+//            return $0[0] < $1[0]
+//        } else {
+//            return $0[1] < $1[1]
+//        }
+//    }
+//
+//    guard let first = sorted.first else {
+//        return 0
+//    }
+//
+//    var time: Int = first[0]
+//    var watingTime: Int = 0
+//    var pq: [Work] = [Work(arrivedTime: first[0], processTime: first[1])]
+//    var cursor = 1
+//
+//    while cursor < sorted.count || !pq.isEmpty {
+//        if pq.isEmpty {
+//            time = sorted[cursor][0]
+//            pq.binaryInsert(Work(arrivedTime: sorted[cursor][0],
+//                                 processTime: sorted[cursor][1]))
+//            cursor+=1
+//        } else {
+//            let nextWork = pq.removeFirst()
+//            time += nextWork.processTime
+//            watingTime += time - nextWork.arrivedTime
+//            while cursor < sorted.count,
+//                sorted[cursor][0] <= time {
+//                    pq.binaryInsert(Work(arrivedTime: sorted[cursor][0],
+//                                         processTime: sorted[cursor][1]))
+//                    cursor += 1
+//            }
+//        }
+//    }
+//
+//    return watingTime / sorted.count
+//}

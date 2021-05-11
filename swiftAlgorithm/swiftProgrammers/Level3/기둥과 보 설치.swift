@@ -6,4 +6,17 @@
 //  Copyright © 2021 odyflame. All rights reserved.
 //
 
-import Foundation
+//import Foundation
+//
+//class Node {
+//    var value: String
+//    var count: Int
+//    var 
+//}
+//
+//func solution(_ n:Int, _ build_frame:[[Int]]) -> [[Int]] {
+//    
+//    
+//    
+//    return []
+//}
