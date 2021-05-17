@@ -361,7 +361,7 @@ import Foundation
 
 
 
-// 조수환님의 코드
+// 조수환님의 코드 Array에 work라는 element를 Where를 써서 넣는 코드는 좋은 것 같다.
 //struct Work: Comparable {
 //    let arrivedTime: Int
 //    let processTime: Int
