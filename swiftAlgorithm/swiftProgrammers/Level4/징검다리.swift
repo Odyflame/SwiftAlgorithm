@@ -16,18 +16,21 @@
 //    myRocks.append(distance)
 //    
 //    var left = 0, right = myRocks.count
-//    var mid = 0
-//    //var index = myRocks.count
+//    var answer = 0
 //    
 //    while left <= right {
-//        mid = (left + right) / 2
+//        var mid = (left + right) / 2, removed = 0, prevIdx = 0
+//        for i in myRocks.indices {
+//            if myRocks[i] - prevIdx < mid { removed += 1}
+//            else { prevIdx = myRocks[i] }
+//        }
 //        
-//        if myRocks[mid] - (myRocks[left] + myRocks[right]) / 2 < myRocks[mid - 1] - (myRocks[left] + myRocks[right]) / 2 {
-//            
-//        } else {
-//            
+//        if removed > n { right += mid - 1 }
+//        else {
+//            answer = max(answer, mid)
+//            left = mid + 1
 //        }
 //    }
 //    
-//    return 0
+//    return answer
 //}
