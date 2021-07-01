@@ -5,8 +5,8 @@
 //  Created by apple on 2021/03/06.
 //  Copyright © 2021 odyflame. All rights reserved.
 //
-import Foundation
-
-func solution(_ numbers:[Int]) -> [Int] {
-    return []
-}
+//import Foundation
+//
+//func solution(_ numbers:[Int]) -> [Int] {
+//    return []
+//}

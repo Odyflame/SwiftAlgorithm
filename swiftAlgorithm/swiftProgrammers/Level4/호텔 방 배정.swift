@@ -6,8 +6,8 @@
 //  Copyright © 2021 odyflame. All rights reserved.
 //
 
-import Foundation
-
-func solution(_ k:Int64, _ room_number:[Int64]) -> [Int64] {
-    return []
-}
+//import Foundation
+//
+//func solution(_ k:Int64, _ room_number:[Int64]) -> [Int64] {
+//    return []
+//}

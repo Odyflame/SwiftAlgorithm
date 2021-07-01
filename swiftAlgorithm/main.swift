@@ -8,14 +8,15 @@
 
 import Foundation
 
-//solution(14, [[0, 1], [0, 2], [1, 3], [1, 4], [2, 5], [2, 6], [2, 7], [3, 8], [3, 9], [3, 10], [4, 11], [4, 12], [4, 13]])
+//let tree = BinarySearchTree<Int>(array: [7, 2, 5, 10, 9, 1])
 
-//var temp = "aabab"
+//twoSum([3,2,9,8], target: 10)
 
-//solution(2, [1300000000,700000000,668239490,618239490,568239490,568239486,518239486,157658638,157658634,100000000,100])
-//solution("SEOUL","DAEGU", "YEOSU", roads:[["ULSAN","BUSAN"],["DAEJEON","ULSAN"],["DAEJEON","GWANGJU"],["SEOUL","DAEJEON"],["SEOUL","ULSAN"],["DAEJEON","DAEGU"],["GWANGJU","BUSAN"],["DAEGU","GWANGJU"],["DAEGU","BUSAN"],["ULSAN","DAEGU"],["GWANGJU","YEOSU"],["BUSAN","YEOSU"]])
+/**
+ 클래스는 단 하나의 목적을 가져야 한다.
+ 클래스는 확장에는 열려잇꼬 변경에는 닫혀 있어야 한다
+ 상위 타입의 객체를 하위 타입으로 바꾸어도 프로그램은 동작해야함
+ 클라이언트는 이용하지 ㅇ낳는 메서드에 의존하지 않도록 분리해야한다,
+ 클라이언트느 ㄴ추상화에의존해야하면     구체화에 의조낳ㅁ녀 안된다,.
+ */
 
-//solution2751()
-
-//solution11([93, 30, 55], [1, 30, 5])
-solution11("LULLLLLLU")

@@ -88,62 +88,62 @@ import Foundation
 //}
 
 
-func solution(_ files:[String]) -> [String] {
-    
-    struct File {
-        var head: String
-        var num: String
-        var tail: String
-        var index: Int
-    }
-    
-    var newFile = [File]()
-    var fileIndex = 0
-    
-    for file in files {
-        var srr = Array(file)
-        
-        var head = ""
-        var num = ""
-        var tail = ""
-        var h = true, n = true, t = true
-        var index = 0
-        
-        for s in srr {
-            switch s {
-            case "A"..."Z" where h == true,
-                 "a"..."z" where h == true,
-                 "-" where h == true,
-                 "." where h == true,
-                 " " where h == true:
-                head += String(s)
-            case "0"..."9" where n == true:
-                h = false
-                num += String(s)
-                
-            default:
-                n = false
-                t = false
-                tail = String(srr[index...])
-                break
-            }
-            index += 1
-        }
-        
-        newFile.append(File(head: head, num: num, tail: tail, index: index))
-        fileIndex += 1
-    }
-    
-    let user = newFile.sorted { left, right in
-        let lhs = left.head.lowercased()
-        let rhs = right.head.lowercased()
-        
-        if lhs == rhs {
-            return left.index < right.index
-        } else {
-            return lhs < rhs
-        }
-    }.map { $0.head+$0.num+$0.tail }
-    
-    return user
-}
+//func solution(_ files:[String]) -> [String] {
+//    
+//    struct File {
+//        var head: String
+//        var num: String
+//        var tail: String
+//        var index: Int
+//    }
+//    
+//    var newFile = [File]()
+//    var fileIndex = 0
+//    
+//    for file in files {
+//        var srr = Array(file)
+//        
+//        var head = ""
+//        var num = ""
+//        var tail = ""
+//        var h = true, n = true, t = true
+//        var index = 0
+//        
+//        for s in srr {
+//            switch s {
+//            case "A"..."Z" where h == true,
+//                 "a"..."z" where h == true,
+//                 "-" where h == true,
+//                 "." where h == true,
+//                 " " where h == true:
+//                head += String(s)
+//            case "0"..."9" where n == true:
+//                h = false
+//                num += String(s)
+//                
+//            default:
+//                n = false
+//                t = false
+//                tail = String(srr[index...])
+//                break
+//            }
+//            index += 1
+//        }
+//        
+//        newFile.append(File(head: head, num: num, tail: tail, index: index))
+//        fileIndex += 1
+//    }
+//    
+//    let user = newFile.sorted { left, right in
+//        let lhs = left.head.lowercased()
+//        let rhs = right.head.lowercased()
+//        
+//        if lhs == rhs {
+//            return left.index < right.index
+//        } else {
+//            return lhs < rhs
+//        }
+//    }.map { $0.head+$0.num+$0.tail }
+//    
+//    return user
+//}
